@@ -1,0 +1,1 @@
+insert into it_functionality_pages set pagecode = "purinrep",pagename="Purchase In Report",pageuri="report/purchase/in",menuhead="Reports",sequence=3,submenu_seq = 1 , createtime = now();

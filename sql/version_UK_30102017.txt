@@ -1,0 +1,5 @@
+insert into it_functionality_pages set pagecode = "ny_po_view",pagename = "Purchase Order (NY View)", pageuri = "report/po/nyview",menuhead="Reports",sequence=3,submenu_seq = 1 , createtime = now();
+
+insert into it_functionality_pages set pagecode = "a_po_view",pagename = "Purchase Order (Admin View)", pageuri = "report/po/aview",menuhead="Reports",sequence=3,submenu_seq = 1 , createtime = now();
+
+insert into it_functionality_pages set pagecode = "a_po_view_details",pagename = "PO hub details (Admin View)", pageuri = "report/po/aview/details",menuhead="Reports",sequence=0,submenu_seq = 0 , createtime = now();

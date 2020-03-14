@@ -1,0 +1,204 @@
+//
+// Flip box
+//
+
+.card-container {
+    -webkit-perspective: 1000;
+            -moz-perspective: 1000;
+            -ms-perspective: 1000;
+            perspective: 1000;
+
+            -ms-transform: perspective(1000px);
+            -moz-transform: perspective(1000px);
+                -moz-transform-style: preserve-3d; 
+                -ms-transform-style: preserve-3d; 
+	width: 270px;
+	height: 180px;
+	line-height: normal;
+
+	@media (min-width: $screen-custom-size) {
+        width: 370px;
+        height: 240px;
+    }
+
+    @media (max-width: $screen-xs-max) {
+		width: 135px;
+		height: 130px;
+	}
+
+	&:hover {
+		.card {
+			transform: rotateY(180deg);
+			-webkit-transform: rotateY(180deg);
+		    -moz-transform: rotateY(180deg);
+		    -o-transform: rotateY(180deg);
+		    -ms-transform: rotateY(180deg);
+
+			@media (max-width: $screen-xs-max) {
+				transform: rotateY(0deg);
+			}
+		}
+
+		.front {
+		    -webkit-transform: rotateY(180deg);
+		    -moz-transform: rotateY(180deg);
+		    -o-transform: rotateY(180deg);
+		    transform: rotateY(180deg);
+		}
+
+		.back {
+		    -webkit-transform: rotateY(0deg);
+		    -moz-transform: rotateY(0deg);
+		    -o-transform: rotateY(0deg);
+		    -ms-transform: rotateY(0deg);
+		    transform: rotateY(0deg);
+		}
+	}
+
+	.back {
+		transform: rotateY(180deg);
+	}
+
+    .card {
+		-webkit-transition: 0.6s;
+        -webkit-transform-style: preserve-3d;
+        -ms-transition: 0.6s;
+
+        -moz-transition: 0.6s;
+        -moz-transform: perspective(1000px);
+        -moz-transform-style: preserve-3d;
+        -ms-transform-style: preserve-3d;
+
+        transition: 0.6s;
+        transform-style: preserve-3d;
+
+        position: relative;
+
+		.front, .back {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 270px;
+			height: 180px;
+			color: white;
+			-webkit-backface-visibility: hidden;
+            -moz-backface-visibility: hidden;
+            -ms-backface-visibility: hidden;
+            backface-visibility: hidden;
+
+            -webkit-transition: 0.6s;
+            -webkit-transform-style: preserve-3d;
+            -webkit-transform: rotateY(0deg);
+
+            -moz-transition: 0.6s;
+            -moz-transform-style: preserve-3d;
+            -moz-transform: rotateY(0deg);
+
+            -o-transition: 0.6s;
+            -o-transform-style: preserve-3d;
+            -o-transform: rotateY(0deg);
+
+            -ms-transition: 0.6s;
+            -ms-transform-style: preserve-3d;
+            -ms-transform: rotateY(0deg);
+
+            transition: 0.6s;
+            transform-style: preserve-3d;
+            transform: rotateY(0deg);
+
+			@media (min-width: $screen-custom-size) {
+		        width: 370px;
+		        height: 240px;
+		    }
+
+		    @media (max-width: $screen-xs-max) {
+				width: 135px;
+				height: 130px;
+			}
+
+		    a {
+		    	padding: 25px 20px;
+		    	display: block;
+		    	color: $default-text-color;
+
+		    	@media (min-width: $screen-custom-size) {
+					padding: 50px 40px;
+			    }
+
+			    @media (max-width: $screen-xs-max) {
+					padding: 10px;
+				}
+		    }
+		}
+
+		.front {
+			display: flex;
+			-webkit-transform: rotateY(0deg);
+            -ms-transform: rotateY(0deg);
+            z-index: 2;
+			background-color: $block-bg;
+			border-left: solid 2px $border-color;
+		}
+
+		.back {
+			display: flex;
+			-webkit-transform: rotateY(-180deg);
+            -moz-transform: rotateY(-180deg);
+            -o-transform: rotateY(-180deg);
+            -ms-transform: rotateY(-180deg);
+            transform: rotateY(-180deg);
+			background-color: $white;
+			border-left: solid 2px $border-color-active;
+
+			a {
+				color: $active-text-color;
+			}
+
+			h2 {
+		    	&:after {
+		    		border-left: solid 8px $active-text-color;
+		    	}
+		    }
+
+		    p {
+		    	color: $light-text-color;
+		    }
+		}
+
+		h2 {
+	    	margin-bottom: 0px;
+	    	line-height: 28px;
+	    	position: relative;
+	    	display: inline;
+
+	    	@media (min-width: $screen-custom-size) {
+	    		line-height: 36px;
+	    	}
+
+	    	@media (max-width: $screen-xs-max) {
+	    		line-height: normal;
+	    	}
+
+	    	&:after {
+	    		content: '';
+	    		position: absolute;
+	    		bottom: 10px;
+	    		right: -20px;
+	    		border-left: solid 8px $default-text-color;
+	    		border-top: solid 4px transparent;
+	    		border-bottom: solid 4px transparent;
+	    	}
+	    }
+
+	    p {
+	    	margin-bottom: 0px;
+	    	margin-top: 10px;
+
+	    	@media (max-width: $screen-xs-max) {
+	    		margin-top: 5px;
+	    		font-size: 13px;
+	    		line-height: 14px;
+	    	}
+	    }
+	}
+}

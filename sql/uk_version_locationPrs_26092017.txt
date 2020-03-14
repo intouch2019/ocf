@@ -1,0 +1,42 @@
+CREATE TABLE it_location_prices (
+   id bigint(20) NOT NULL AUTO_INCREMENT,
+   location_id bigint(20) NOT NULL,
+   product_id bigint(20) NOT NULL,   
+   price double not null,
+   is_active tinyint(1) not null default 1,
+   createtime datetime NOT NULL,
+   updatetime timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+   createdat_location_id bigint(20) DEFAULT NULL,
+   createdby bigint(20) DEFAULT NULL,
+   updatedby bigint(20) DEFAULT NULL,
+   updatedat_location_id bigint(20) DEFAULT NULL,
+  PRIMARY KEY (id)  
+); 
+alter table it_location_prices add applicable_date datetime not null after product_id;
+
+
+alter table it_bins drop foreign key it_bins_ibfk_1;
+alter table it_location_functionalities drop foreign key it_location_functionalities_ibfk_1;
+alter table it_location_functionalities drop foreign key it_location_functionalities_ibfk_2;
+alter table it_order_items drop foreign key it_order_items_ibfk_1;
+alter table it_order_items drop foreign key it_order_items_ibfk_2;
+alter table it_order_items drop foreign key it_order_items_ibfk_3;
+alter table it_orders drop foreign key it_orders_ibfk_1;
+alter table it_rate_diary drop foreign key it_rate_diary_ibfk_1;
+alter table it_stock_current drop foreign key it_stock_current_ibfk_1;
+alter table it_stock_current drop foreign key it_stock_current_ibfk_2;
+alter table it_stock_diary drop foreign key it_stock_diary_ibfk_1;
+alter table it_stock_diary drop foreign key it_stock_diary_ibfk_2;
+alter table it_user_location_functionalities  drop foreign key it_user_location_functionalities_ibfk_1;
+alter table it_user_location_functionalities  drop foreign key it_user_location_functionalities_ibfk_2;
+
+insert into it_functionality_pages set pagecode = 'locpr',pagename='Current Price Master',pageuri='location/price',menuhead='Manage',sequence=1,submenu_seq=8,createtime=now();
+insert into it_functionality_pages set pagecode = 'locprupload',pagename='Location Price Upload',pageuri='location/price/upload',menuhead='Manage',sequence=0,submenu_seq=0,createtime=now();
+insert into it_functionality_pages set pagecode = 'locpredit',pagename='Location Price Edit',pageuri='location/price/edit',menuhead='Manage',sequence=0,submenu_seq=0,createtime=now();
+
+create index search_key1 on it_location_prices(location_id);
+create index search_key2 on it_location_prices(product_id);
+
+
+
+

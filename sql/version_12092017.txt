@@ -1,0 +1,5 @@
+alter table it_products change current_rate current_rate double not null default 0;
+update it_functionality_pages set pagename = 'Products' , pageuri =  'products' where id = 1;
+insert into it_functionality_pages set pagecode = 'produpload',pagename='Products Upload',pageuri='product/upload',menuhead = 'Manage',sequence=0,createtime=now();
+insert into it_location_functionalities set location_id = 2 , functionality_id = 2 ,createtime = now();
+insert into it_user_location_functionalities  set user_id = 1 , location_functionality_id = 2 , createtime = now();

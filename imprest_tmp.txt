@@ -1,0 +1,209 @@
+
+ imprest_report_query : SELECT SQL_CALC_FOUND_ROWS i.id,r.dispname,i.prev_bal,i.amount,i.curr_bal,i.voucher_no,i.description,i.reason,u.name,i.ctime FROM it_imprest_details i, it_rfc_master r,it_users u 
+         where  u.id= i.by_user and r.id = i.crid and i.ctime > '2019-06-18 00:00:00' and i.ctime < '2019-06-18 23:59:59' and i.crid = 1 
+	 order by i.ctime desc 
+	 LIMIT 0, 50
+ 
+
+ imprest_report_query : SELECT SQL_CALC_FOUND_ROWS i.id,r.dispname,i.prev_bal,i.amount,i.curr_bal,i.voucher_no,i.description,i.reason,u.name,i.ctime FROM it_imprest_details i, it_rfc_master r,it_users u 
+         where  u.id= i.by_user and r.id = i.crid and i.ctime > '2019-05-01 00:00:00' and i.ctime < '2019-05-24 23:59:59' and i.crid = 1 
+	 order by i.ctime desc 
+	 LIMIT 0, 50
+ 
+
+ imprest_report_query : SELECT SQL_CALC_FOUND_ROWS i.id,r.dispname,i.prev_bal,i.amount,i.curr_bal,i.voucher_no,i.description,i.reason,u.name,i.ctime FROM it_imprest_details i, it_rfc_master r,it_users u 
+         where  u.id= i.by_user and r.id = i.crid and i.ctime > '2019-05-01 00:00:00' and i.ctime < '2019-05-24 23:59:59' and i.crid = 1 
+	 ORDER BY  byuser
+			 	asc
+	 LIMIT 0, 50
+ 
+
+ imprest_report_query : SELECT SQL_CALC_FOUND_ROWS i.id,r.dispname,i.prev_bal,i.amount,i.curr_bal,i.voucher_no,i.description,i.reason,u.name as byuser,i.ctime FROM it_imprest_details i, it_rfc_master r,it_users u 
+         where  u.id= i.by_user and r.id = i.crid and i.ctime > '2019-06-18 00:00:00' and i.ctime < '2019-06-18 23:59:59' and i.crid = 1 
+	 order by i.ctime desc 
+	 LIMIT 0, 50
+ 
+
+ imprest_report_query : SELECT SQL_CALC_FOUND_ROWS i.id,r.dispname,i.prev_bal,i.amount,i.curr_bal,i.voucher_no,i.description,i.reason,u.name as byuser,i.ctime FROM it_imprest_details i, it_rfc_master r,it_users u 
+         where  u.id= i.by_user and r.id = i.crid and i.ctime > '2019-05-01 00:00:00' and i.ctime < '2019-05-31 23:59:59' and i.crid = 1 
+	 order by i.ctime desc 
+	 LIMIT 0, 50
+ 
+
+ imprest_report_query : SELECT SQL_CALC_FOUND_ROWS i.id,r.dispname,i.prev_bal,i.amount,i.curr_bal,i.voucher_no,i.description,i.reason,u.name as byuser,i.ctime FROM it_imprest_details i, it_rfc_master r,it_users u 
+         where  u.id= i.by_user and r.id = i.crid and i.ctime > '2019-05-01 00:00:00' and i.ctime < '2019-05-31 23:59:59' and i.crid = 1 
+	 ORDER BY  byuser
+			 	asc
+	 LIMIT 0, 50
+ 
+
+ imprest_report_query : SELECT SQL_CALC_FOUND_ROWS i.id,r.dispname,i.prev_bal,i.amount,i.curr_bal,i.voucher_no,i.description,i.reason,u.name as byuser,i.ctime FROM it_imprest_details i, it_rfc_master r,it_users u 
+         where  u.id= i.by_user and r.id = i.crid and i.ctime > '2019-05-01 00:00:00' and i.ctime < '2019-05-31 23:59:59' and i.crid = 1 
+	 ORDER BY  byuser
+			 	desc
+	 LIMIT 0, 50
+ 
+
+ imprest_report_query : SELECT SQL_CALC_FOUND_ROWS i.id,r.dispname,i.prev_bal,i.amount,i.curr_bal,i.voucher_no,i.description,i.reason,u.name as byuser,i.ctime FROM it_imprest_details i, it_rfc_master r,it_users u 
+         where  u.id= i.by_user and r.id = i.crid and i.ctime > '2019-06-18 00:00:00' and i.ctime < '2019-06-18 23:59:59' and i.crid = 1 
+	 order by i.ctime desc 
+	 LIMIT 0, 50
+ 
+
+ imprest_report_query : SELECT SQL_CALC_FOUND_ROWS i.id,r.dispname,i.prev_bal,i.amount,i.curr_bal,i.voucher_no,i.description,i.reason,u.name as byuser,i.ctime FROM it_imprest_details i, it_rfc_master r,it_users u 
+         where  u.id= i.by_user and r.id = i.crid and i.ctime > '2019-05-01 00:00:00' and i.ctime < '2019-05-31 23:59:59' and i.crid = 1 
+	 order by i.ctime desc 
+	 LIMIT 0, 50
+ 
+
+ imprest_report_query : SELECT SQL_CALC_FOUND_ROWS i.id,r.dispname,i.prev_bal,i.amount,i.curr_bal,i.voucher_no,i.description,i.reason,u.name as byuser,i.ctime FROM it_imprest_details i, it_rfc_master r,it_users u 
+         where  u.id= i.by_user and r.id = i.crid and i.ctime > '2019-05-01 00:00:00' and i.ctime < '2019-05-31 23:59:59' and i.crid = 1 
+	 ORDER BY  ctime
+			 	asc
+	 LIMIT 0, 50
+ 
+
+ imprest_report_query : SELECT SQL_CALC_FOUND_ROWS i.id,r.dispname,i.prev_bal,i.amount,i.curr_bal,i.voucher_no,i.description,i.reason,u.name as byuser,i.ctime FROM it_imprest_details i, it_rfc_master r,it_users u 
+         where  u.id= i.by_user and r.id = i.crid and i.ctime > '2019-05-01 00:00:00' and i.ctime < '2019-05-31 23:59:59' and i.crid = 1 
+	 ORDER BY  byuser
+			 	asc
+	 LIMIT 0, 50
+ 
+
+ imprest_report_query : SELECT SQL_CALC_FOUND_ROWS i.id,r.dispname,i.prev_bal,i.amount,i.curr_bal,i.voucher_no,i.description,i.reason,u.name as byuser,i.ctime FROM it_imprest_details i, it_rfc_master r,it_users u 
+         where  u.id= i.by_user and r.id = i.crid and i.ctime > '2019-05-01 00:00:00' and i.ctime < '2019-05-31 23:59:59' and i.crid = 1 
+	 ORDER BY  reason
+			 	asc
+	 LIMIT 0, 50
+ 
+
+ imprest_report_query : SELECT SQL_CALC_FOUND_ROWS i.id,r.dispname,i.prev_bal,i.amount,i.curr_bal,i.voucher_no,i.description,i.reason,u.name as byuser,i.ctime FROM it_imprest_details i, it_rfc_master r,it_users u 
+         where  u.id= i.by_user and r.id = i.crid and i.ctime > '2019-05-01 00:00:00' and i.ctime < '2019-05-31 23:59:59' and i.crid = 1 
+	 ORDER BY  description
+			 	asc
+	 LIMIT 0, 50
+ 
+
+ imprest_report_query : SELECT SQL_CALC_FOUND_ROWS i.id,r.dispname,i.prev_bal,i.amount,i.curr_bal,i.voucher_no,i.description,i.reason,u.name as byuser,i.ctime FROM it_imprest_details i, it_rfc_master r,it_users u 
+         where  u.id= i.by_user and r.id = i.crid and i.ctime > '2019-05-01 00:00:00' and i.ctime < '2019-05-31 23:59:59' and i.crid = 1 
+	 ORDER BY  curr_bal
+			 	asc
+	 LIMIT 0, 50
+ 
+
+ imprest_report_query : SELECT SQL_CALC_FOUND_ROWS i.id,r.dispname,i.prev_bal,i.amount,i.curr_bal,i.voucher_no,i.description,i.reason,u.name as byuser,i.ctime FROM it_imprest_details i, it_rfc_master r,it_users u 
+         where  u.id= i.by_user and r.id = i.crid and i.ctime > '2019-05-01 00:00:00' and i.ctime < '2019-05-31 23:59:59' and i.crid = 1 
+	 ORDER BY  amount
+			 	asc
+	 LIMIT 0, 50
+ 
+
+ imprest_report_query : SELECT SQL_CALC_FOUND_ROWS i.id,r.dispname,i.prev_bal,i.amount,i.curr_bal,i.voucher_no,i.description,i.reason,u.name as byuser,i.ctime FROM it_imprest_details i, it_rfc_master r,it_users u 
+         where  u.id= i.by_user and r.id = i.crid and i.ctime > '2019-05-01 00:00:00' and i.ctime < '2019-05-31 23:59:59' and i.crid = 1 
+	 ORDER BY  prev_bal
+			 	asc
+	 LIMIT 0, 50
+ 
+
+ imprest_report_query : SELECT SQL_CALC_FOUND_ROWS i.id,r.dispname,i.prev_bal,i.amount,i.curr_bal,i.voucher_no,i.description,i.reason,u.name as byuser,i.ctime FROM it_imprest_details i, it_rfc_master r,it_users u 
+         where  u.id= i.by_user and r.id = i.crid and i.ctime > '2019-05-01 00:00:00' and i.ctime < '2019-05-31 23:59:59' and i.crid = 1 
+	 ORDER BY  voucher_no
+			 	asc
+	 LIMIT 0, 50
+ 
+
+ imprest_report_query : SELECT SQL_CALC_FOUND_ROWS i.id,r.dispname,i.prev_bal,i.amount,i.curr_bal,i.voucher_no,i.description,i.reason,u.name as byuser,i.ctime FROM it_imprest_details i, it_rfc_master r,it_users u 
+         where  u.id= i.by_user and r.id = i.crid and i.ctime > '2019-05-01 00:00:00' and i.ctime < '2019-05-31 23:59:59' and i.crid = 1 
+	 ORDER BY  crcode
+			 	asc
+	 LIMIT 0, 50
+ 
+
+ imprest_report_query : SELECT SQL_CALC_FOUND_ROWS i.id,r.dispname,i.prev_bal,i.amount,i.curr_bal,i.voucher_no,i.description,i.reason,u.name as byuser,i.ctime FROM it_imprest_details i, it_rfc_master r,it_users u 
+         where  u.id= i.by_user and r.id = i.crid and i.ctime > '2019-06-18 00:00:00' and i.ctime < '2019-06-18 23:59:59' and i.crid = 1 
+	 order by i.ctime desc 
+	 LIMIT 0, 50
+ 
+
+ imprest_report_query : SELECT SQL_CALC_FOUND_ROWS i.id,r.dispname,i.prev_bal,i.amount,i.curr_bal,i.voucher_no,i.description,i.reason,u.name as byuser,i.ctime FROM it_imprest_details i, it_rfc_master r,it_users u 
+         where  u.id= i.by_user and r.id = i.crid and i.ctime > '2019-05-01 00:00:00' and i.ctime < '2019-05-31 23:59:59' and i.crid = 1 
+	 order by i.ctime desc 
+	 LIMIT 0, 50
+ 
+
+ imprest_report_query : SELECT SQL_CALC_FOUND_ROWS i.id,r.dispname,i.prev_bal,i.amount,i.curr_bal,i.voucher_no,i.description,i.reason,u.name as byuser,i.ctime FROM it_imprest_details i, it_rfc_master r,it_users u 
+         where  u.id= i.by_user and r.id = i.crid and i.ctime > '2019-05-01 00:00:00' and i.ctime < '2019-05-31 23:59:59' and i.crid = 1 
+	 ORDER BY  dispname
+			 	asc
+	 LIMIT 0, 50
+ 
+
+ imprest_report_query : SELECT SQL_CALC_FOUND_ROWS i.id,r.dispname,i.prev_bal,i.amount,i.curr_bal,i.voucher_no,i.description,i.reason,u.name as byuser,i.ctime FROM it_imprest_details i, it_rfc_master r,it_users u 
+         where  u.id= i.by_user and r.id = i.crid and i.ctime > '2019-05-01 00:00:00' and i.ctime < '2019-05-31 23:59:59' and i.crid = 1 
+	 ORDER BY  dispname
+			 	desc
+	 LIMIT 0, 50
+ 
+
+ imprest_report_query : SELECT SQL_CALC_FOUND_ROWS i.id,r.dispname,i.prev_bal,i.amount,i.curr_bal,i.voucher_no,i.description,i.reason,u.name as byuser,i.ctime FROM it_imprest_details i, it_rfc_master r,it_users u 
+         where  u.id= i.by_user and r.id = i.crid and i.ctime > '2019-05-01 00:00:00' and i.ctime < '2019-05-31 23:59:59' and i.crid = 1 
+	 ORDER BY  voucher_no
+			 	asc
+	 LIMIT 0, 50
+ 
+
+ imprest_report_query : SELECT SQL_CALC_FOUND_ROWS i.id,r.dispname,i.prev_bal,i.amount,i.curr_bal,i.voucher_no,i.description,i.reason,u.name as byuser,i.ctime FROM it_imprest_details i, it_rfc_master r,it_users u 
+         where  u.id= i.by_user and r.id = i.crid and i.ctime > '2019-05-01 00:00:00' and i.ctime < '2019-05-31 23:59:59' and i.crid = 1 
+	 ORDER BY  voucher_no
+			 	desc
+	 LIMIT 0, 50
+ 
+
+ imprest_report_query : SELECT SQL_CALC_FOUND_ROWS i.id,r.dispname,i.prev_bal,i.amount,i.curr_bal,i.voucher_no,i.description,i.reason,u.name as byuser,i.ctime FROM it_imprest_details i, it_rfc_master r,it_users u 
+         where  u.id= i.by_user and r.id = i.crid and i.ctime > '2019-05-01 00:00:00' and i.ctime < '2019-05-31 23:59:59' and i.crid = 1 
+	 ORDER BY  voucher_no
+			 	asc
+	 LIMIT 0, 50
+ 
+
+ imprest_report_query : SELECT SQL_CALC_FOUND_ROWS i.id,r.dispname,i.prev_bal,i.amount,i.curr_bal,i.voucher_no,i.description,i.reason,u.name as byuser,i.ctime FROM it_imprest_details i, it_rfc_master r,it_users u 
+         where  u.id= i.by_user and r.id = i.crid and i.ctime > '2019-05-01 00:00:00' and i.ctime < '2019-05-31 23:59:59' and i.crid = 1 
+	 ORDER BY  voucher_no
+			 	desc
+	 LIMIT 0, 50
+ 
+
+ imprest_report_query : SELECT SQL_CALC_FOUND_ROWS i.id,r.dispname,i.prev_bal,i.amount,i.curr_bal,i.voucher_no,i.description,i.reason,u.name as byuser,i.ctime FROM it_imprest_details i, it_rfc_master r,it_users u 
+         where  u.id= i.by_user and r.id = i.crid and i.ctime > '2019-05-01 00:00:00' and i.ctime < '2019-05-31 23:59:59' and i.crid = 1 
+	 ORDER BY  voucher_no
+			 	asc
+	 LIMIT 0, 50
+ 
+
+ imprest_report_query : SELECT SQL_CALC_FOUND_ROWS i.id,r.dispname,i.prev_bal,i.amount,i.curr_bal,i.voucher_no,i.description,i.reason,u.name as byuser,i.ctime FROM it_imprest_details i, it_rfc_master r,it_users u 
+         where  u.id= i.by_user and r.id = i.crid and i.ctime > '2019-05-01 00:00:00' and i.ctime < '2019-05-31 23:59:59' and i.crid = 1 
+	 ORDER BY  prev_bal
+			 	asc
+	 LIMIT 0, 50
+ 
+
+ imprest_report_query : SELECT SQL_CALC_FOUND_ROWS i.id,r.dispname,i.prev_bal,i.amount,i.curr_bal,i.voucher_no,i.description,i.reason,u.name as byuser,i.ctime FROM it_imprest_details i, it_rfc_master r,it_users u 
+         where  u.id= i.by_user and r.id = i.crid and i.ctime > '2019-05-01 00:00:00' and i.ctime < '2019-05-31 23:59:59' and i.crid = 1 
+	 ORDER BY  prev_bal
+			 	desc
+	 LIMIT 0, 50
+ 
+
+ imprest_report_query : SELECT SQL_CALC_FOUND_ROWS i.id,r.dispname,i.prev_bal,i.amount,i.curr_bal,i.voucher_no,i.description,i.reason,u.name as byuser,i.ctime FROM it_imprest_details i, it_rfc_master r,it_users u 
+         where  u.id= i.by_user and r.id = i.crid and i.ctime > '2019-05-01 00:00:00' and i.ctime < '2019-05-31 23:59:59' and i.crid = 1 
+	 ORDER BY  amount
+			 	asc
+	 LIMIT 0, 50
+ 
+
+ imprest_report_query : SELECT SQL_CALC_FOUND_ROWS i.id,r.dispname,i.prev_bal,i.amount,i.curr_bal,i.voucher_no,i.description,i.reason,u.name as byuser,i.ctime FROM it_imprest_details i, it_rfc_master r,it_users u 
+         where  u.id= i.by_user and r.id = i.crid and i.ctime > '2019-05-01 00:00:00' and i.ctime < '2019-05-31 23:59:59' and i.crid = 1 
+	 ORDER BY  amount
+			 	desc
+	 LIMIT 0, 50
+ 

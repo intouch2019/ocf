@@ -1,0 +1,1 @@
+alter table it_products add variants_id bigint(20) not null after product_ref_id

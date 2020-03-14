@@ -1,0 +1,43 @@
+//
+// Helper
+//
+
+//Margin
+.no-margin {
+	margin: 0 !important;
+}
+.offset-top30 {
+	margin-top: 30px;
+}
+.offset-top-bottom30 {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+
+
+//Padding
+.no-padding {
+	padding: 0 !important;
+}
+.px-30 {
+	padding: 0 30px;
+
+	@media (max-width: $screen-xs-min) {
+		padding-left: 15px;
+		padding-right: 15px;
+    }
+}
+.pl-15 {
+	padding-left: 15px !important;
+}
+
+
+//Display
+.flex {
+	display:flex;
+
+	@media (max-width: $screen-xs-max) {
+        display:inherit;
+    }
+}

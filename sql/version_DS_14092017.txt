@@ -1,0 +1,7 @@
+alter table it_functionality_pages change submenu_seq submenu_seq int(20) null default null ;
+
+insert into it_functionality_pages set pagecode = 'prodedit', pagename= 'Products Edit' , pageuri = 'product/edit', menuhead ='Manage', sequence =0, submenu_seq = 0 , createtime = now();
+insert into it_location_functionalities set location_id = 2, functionality_id= 6, createtime =now();
+insert into it_user_location_functionalities set user_id = 1, location_functionality_id = 7, createtime = now();
+
+alter table it_rate_diary add createdby bigint(20) not null after rate;

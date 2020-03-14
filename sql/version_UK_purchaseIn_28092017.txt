@@ -1,0 +1,40 @@
+CREATE TABLE it_purchase_in (
+   id bigint(20) NOT NULL AUTO_INCREMENT,
+   pur_in_no varchar(256) NOT NULL,
+   purin_dt datetime,
+   status int(11),   
+   createtime datetime NOT NULL,
+   updatetime timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+   updatedby bigint(20) DEFAULT NULL,
+   createdby bigint(20) DEFAULT NULL,
+   createdat_location_id bigint(20) DEFAULT NULL,
+   updatedat_location_id bigint(20) DEFAULT NULL,
+   PRIMARY KEY (id)  
+); 
+
+
+CREATE TABLE it_purchase_in_items (
+   id bigint(20) NOT NULL AUTO_INCREMENT,
+   pur_in_id bigint(20) NOT NULL,
+   product_id bigint(20) NOT NULL,
+   supplier_id bigint(20) NOT NULL,
+   qty_in_kg double not null,
+   rate double,  
+   createtime datetime NOT NULL,
+   updatetime timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+   updatedby bigint(20) DEFAULT NULL,
+   createdby bigint(20) DEFAULT NULL,
+   createdat_location_id bigint(20) DEFAULT NULL,
+   updatedat_location_id bigint(20) DEFAULT NULL,
+   PRIMARY KEY (id)  
+);
+alter table it_purchase_in_items add uom_id bigint(20) not null after rate;
+
+insert into it_functionality_pages set pagecode = 'purin',pagename='Purchase In',pageuri='purchase/in',menuhead='Manage',sequence=1,submenu_seq=9,createtime=now();
+insert into it_functionality_pages set pagecode = 'purinedit',pagename='Purchase In Entry Edit',pageuri='purchase/in/entry/edit',menuhead='Manage',sequence=0,submenu_seq=0,createtime=now();
+
+CREATE TABLE  it_last_purchasein_no (
+  purin_no varchar(256) NOT NULL DEFAULT '0'
+);
+
+insert into it_last_purchasein_no set purin_no = "P0000000";

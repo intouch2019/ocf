@@ -1,0 +1,4 @@
+insert into it_functionality_pages set pagecode = 'locfunc_to_user',pagename='Assign Functionalities to User',pageuri = 'locfunc/user',menuhead='Manage',sequence=1,submenu_seq = 5,createtime = now();
+insert into it_user_location_functionalities set user_id = 1 , location_functionality_id = 9, createtime = now();
+insert into it_functionality_pages set  pagecode = "loccreate",pagename="Create Locations",pageuri="create/location",menuhead="Manage",sequence=0,submenu_seq=0,createtime=now();
+insert into it_functionality_pages set  pagecode = "usercreate",pagename="Create Users",pageuri="create/user",menuhead="Manage",sequence=0,submenu_seq=0,createtime=now();

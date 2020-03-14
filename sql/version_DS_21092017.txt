@@ -1,0 +1,14 @@
+alter table it_stock_current add createdat_locationid bigint(20) not null after qty;
+alter table it_stock_current add createdby bigint(20) not null after qty;
+alter table it_stock_current add updatedby bigint(20) null after createtime ;
+alter table it_stock_current add updatedat_locationid bigint(20) null after updatedby;
+
+alter table it_stock_diary add createdby bigint(20) not null after reason;
+alter table it_stock_diary add createdat_locationid bigint(20) not null after createdby;
+
+insert into it_functionality_pages set pagecode = 'stock',pagename='Stock',pageuri='stock',menuhead='Manage',sequence=1,submenu_seq = 7 , createtime = now();
+
+insert into it_functionality_pages set pagecode = 'stockupload',pagename='Stock Upload',pageuri='stock/upload',menuhead = 'Manage',sequence=0,submenu_seq = 0,createtime=now();
+
+alter table it_stock_current add uom_id bigint(20) not null after qty;
+alter table it_stock_diary add uom_id bigint(20) not null after qty;

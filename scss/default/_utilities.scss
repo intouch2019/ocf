@@ -1,0 +1,86 @@
+//
+// utilities
+//
+
+*:focus {
+	outline:none !important;
+}
+
+html {
+	min-height: 100%;
+}
+
+body {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-family: $font-regular;
+	font-size: 16px;
+	color: $default-text-color;
+	@include background-image(bg-main, png, $body-bg-color, no-repeat, right, top);
+	background-size: 50% auto;
+	height: 100%;
+	overflow-x: hidden;
+
+	@media (min-width: $screen-custom-size) {
+        background-size: auto auto;
+    }
+
+    @media (max-width: $screen-xs-max) {
+    	background-size: 80% auto;
+    }
+}
+
+h1, h2, h3, h4 {
+	line-height: normal;
+	margin-top: 0px;
+	font-family: $font-regular;
+	font-weight: normal;
+}
+
+h1 {
+	font-size: 20px;
+
+	@media (min-width: $screen-custom-size) {
+		font-size: 28px;
+	}
+}
+
+h2 {
+	font-size: 28px;
+	line-height: normal;
+
+	@media (min-width: $screen-custom-size) {
+		font-size: 40px;
+	}
+
+	@media (max-width: $screen-xs-max) {
+		font-size: 16px;
+	}
+}
+
+p {
+	line-height: normal;
+}
+
+a {
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: none;
+	}
+
+	&:focus {
+		text-decoration: none;
+
+		&:hover {
+			
+		}
+	}
+}
+
+img {
+	max-width: 100%;
+}
+.content-block {
+	background-color: $white;
+}

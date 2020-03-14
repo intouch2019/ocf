@@ -1,0 +1,5 @@
+alter table it_bins add createdat_location_id bigint(20);
+alter table it_bins add updatedat_location_id bigint(20);
+insert into it_functionality_pages set pagecode = 'bins',pagename='Bins',pageuri='bins',menuhead='Manage',sequence=1,submenu_seq = 6 , createtime = now();
+insert into it_functionality_pages set pagecode = 'bincreate',pagename='Bin Create',pageuri='bin/create',menuhead='Manage',sequence=0,submenu_seq = 0 , createtime = now();
+

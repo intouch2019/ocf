@@ -1,0 +1,8 @@
+create table it_lasthqsummaryno(hqsummaryno varchar(256) not null default 0);
+
+create table it_hq_summary(id bigint(20) not null auto_increment, hq_summary_no varchar(256) not null, hq_id bigint(20) not null, allocation_date datetime not null, location_id bigint(20) not null, product_id bigint(20) not null, tot_qty_packets double not null, tot_qty_kg double not null, createtime datetime not null , updatetime timestamp not null default current_timestamp on update current_timestamp, primary key(id));
+
+insert into it_functionality_pages set pagecode = 'hq_allocation_summary',pagename='HQ Allocation Summary',pageuri='hq/allocation/summary',menuhead='Manage',sequence=1,submenu_seq = 9 , createtime = now();
+
+
+*********replace $insertid with $hqid in dblogic.php line no 325 and 328***********

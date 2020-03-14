@@ -1,0 +1,18 @@
+insert into it_functionality_pages set pagecode='loc',pagename='Locations',pageuri='locations',menuhead='Manage',sequence=1,submenu_seq=2,createtime=now();
+
+alter table it_locations add column city varchar(50) default null after is_active;
+alter table it_locations add column pincode int(11) default null after city;
+alter table it_locations add column created_by int(11) default null after pincode;
+
+insert into it_functionality_pages set pagecode='user',pagename='Users',pageuri='users',menuhead='Manage',sequence=1,submenu_seq=3,createtime=now();
+
+insert into it_location_functionalities set location_id=2,functionality_id=3,is_active=1,createtime=now();
+insert into it_location_functionalities set location_id=2,functionality_id=4,is_active=1,createtime=now();
+
+insert into it_user_location_functionalities set user_id=1,location_functionality_id=3,is_active=1,createtime=now();
+insert into it_user_location_functionalities set user_id=1,location_functionality_id=4,is_active=1,createtime=now();
+
+insert into it_functionality_pages set pagecode='func_to_location',pagename='Assign functionality to locations',pageuri='func/location',menuhead='Manage',sequence=1,submenu_seq=4,createtime=now();
+
+insert into it_location_functionalities set location_id=2,functionality_id=5,is_active=1,createtime=now();
+insert into it_user_location_functionalities set user_id=1,location_functionality_id=5,is_active=1,createtime=now();

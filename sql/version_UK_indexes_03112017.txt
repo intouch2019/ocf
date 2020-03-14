@@ -1,0 +1,3 @@
+create index search_key on it_purchase_orders (po_date,status);
+create index search_key on it_purchase_order_items (po_id,product_id);
+create index search_key2 on it_purchase_order_items (po_id,parent_location_id);

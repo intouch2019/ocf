@@ -1,0 +1,3 @@
+create unique index pagecode on it_functionality_pages(pagecode);
+create unique index sequence on it_functionality_pages(pagecode,sequence,submenu_seq);
+

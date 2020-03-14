@@ -1,0 +1,86 @@
+WH_ID,Mother warehouse/Depot,WH City,StateName
+1101,MWH,Hyderabad,Telangana
+1102,Depot,Hyderabad,Telangana
+1104,Depot,Vijaywada,Andra Pradesh
+1105,Depot,Guwahati,Assam
+1106,Depot,Patna,Bihar
+1107,Depot,Patna,Bihar
+1108,Depot,Raipur,Chhaattisgarh
+1109,Depot,Chandigarh,Chandigarh
+1111,Depot,Delhi,Delhi
+1114,Depot,Salcette,GOA
+1116,Depot,Ahmedabad,Gujarat
+1117,MWH,Vapi,Gujarat
+1119,Depot,Solan,Himachal Pradesh
+1120,Depot,Ambala,Haryana
+1121,MWH,Ambala,Haryana
+1122,Depot,Jammu,Jammu und Kashmir
+1123,MWH,Bangalore,Karnataka
+1124,Depot,Bangalore,Karnataka
+1126,Depot,Hubli,Karnataka
+1127,Depot,Calicut,Kerala
+1128,Depot,Thrikkakara,Kerala
+1132,Depot,Bhiwandi,Maharashtra
+1134,Depot,Nagpur,Maharashtra
+1136,Depot,Pune,Maharashtra
+1138,Depot,Pune,Maharashtra
+1139,Depot,INDORE,Madhya Pradesh
+1142,Depot,Jabalpur,Madhya Pradesh
+1143,Depot,Cuttack,Orissa
+1145,Depot,Mohali,Punjab
+1147,Depot,Jaipur,Rajasthan
+1149,Depot,Chennai,Tamil Nadu
+1150,Depot,Madurai,Tamil Nadu
+1152,Depot,Ghaziabad,Uttar Pradesh
+1153,Depot,Lucknow,Uttar Pradesh
+1154,Depot,Varanasi,Uttar Pradesh
+1156,Depot,Dehradun,Uttaranchal
+1157,Depot,Howrah,West Bengal
+1158,Depot,Jagadishpur,West Bengal
+1160,Depot,Jalpaiguri,West Bengal
+1161,Depot,RANCHI,Jharkhand
+1170,Depot,Bangalore,Karnataka
+1173,Depot,Agartala,Tripura
+1174,MWH,Siliguri,West Bengal
+1181,Depot,Delhi,Delhi
+1183,Depot,Raigadh,Maharashtra
+1185,Depot,Coimbatore,Tamil Nadu
+1186,Depot,Gorakhpur,Uttar Pradesh
+1188,Depot,Thane,Maharashtra
+1189,Depot,Raigadh,Maharashtra
+1191,MWH,Chennai,Tamil Nadu
+3805,Depot,Guwahati,Assam
+3806,Depot,Patna,Bihar
+3807,Depot,Hyderabad,Telangana
+3808,Depot,Raipur,Chhaattisgarh
+3809,Depot,Chandigarh,Chandigarh
+3810,Depot,Vijaywada,Andra Pradesh
+3811,Depot,Delhi,Delhi
+3814,Depot,Salcette,GOA
+3816,Depot,Ahmedabad,Gujarat
+3819,Depot,Solan,Himachal Pradesh
+3820,Depot,Ambala,Haryana
+3822,Depot,Jammu,Jammu und Kashmir
+3824,Depot,Bangalore,Karnataka
+3826,Depot,Hubli,Karnataka
+3827,Depot,Calicut,Kerala
+3828,Depot,Thrikkakara,Kerala
+3832,Depot,Bhiwandi,Maharashtra
+3834,Depot,Nagpur,Maharashtra
+3838,Depot,Pune,Maharashtra
+3839,Depot,Indore,Madhya Pradesh
+3842,Depot,Jabalpur,Madhya Pradesh
+3843,Depot,Cuttack,Orissa
+3845,Depot,Mohali,Punjab
+3847,Depot,Jaipur,Rajasthan
+3849,Depot,Chennai,Tamil Nadu
+3850,Depot,Madurai,Tamil Nadu
+3852,Depot,Ghaziabad,Uttar Pradesh
+3853,Depot,Lucknow,Uttar Pradesh
+3854,Depot,Varanasi,Uttar Pradesh
+3856,Depot,Dehradun,Uttaranchal
+3858,Depot,LILUAH,West Bengal
+3860,Depot,Jalpaiguri,West Bengal
+3861,Depot,RANCHI,Jharkhand
+3885,Depot,Coimbatore,Tamil Nadu
+3886,Depot,Gorakhpur,Uttar Pradesh

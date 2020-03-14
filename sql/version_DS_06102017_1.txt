@@ -1,0 +1,7 @@
+update it_functionality_pages set sequence = 2, submenu_seq = 8, menuhead = "Transactions" where id =33;
+
+insert into it_functionality_pages set pagecode = 'conversion_report',pagename='Packet Conversion Report',pageuri='conversion/report',menuhead='Reports',sequence = 3,submenu_seq = 1 , createtime = now();
+
+insert into it_functionality_pages set pagecode = 'conversion_details',pagename='Packet Conversion Details',pageuri='conversion/details',menuhead='Reports',sequence = 0,submenu_seq = 0 , createtime = now();
+
+

@@ -1,0 +1,20 @@
+alter table it_purchase_orders add execution_date date after po_date;
+
+CREATE TABLE it_po_day_account(
+  id bigint(20) NOT NULL AUTO_INCREMENT,
+  po_id bigint(20) NOT NULL,
+  pur_location_id bigint(20) DEFAULT NULL,
+  po_no varchar(100) NOT NULL,
+  po_date date NOT NULL,
+  execution_date date DEFAULT NULL,
+  execution_day int(11),
+  status int(11) DEFAULT NULL,
+  created_by bigint(20) NOT NULL,
+  createtime datetime NOT NULL,
+  updatetime timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  updated_by bigint(20) DEFAULT NULL,
+  createdat_location_id bigint(20) DEFAULT NULL,
+  updatedat_location_id bigint(20) DEFAULT NULL,
+  PRIMARY KEY (id),
+  KEY search_key (po_date,status)
+);

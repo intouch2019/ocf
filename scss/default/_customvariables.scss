@@ -1,0 +1,57 @@
+//
+// variables
+//
+
+//default font size set
+$browser-context: 16; // Default 
+
+
+//font-family
+$font-regular:  		'Roboto', Arial, Sans-serif;
+
+
+//paths
+$fontpath:			 		"../fonts/";
+$imgPath: 			 		"../images/";
+
+
+//colors
+$white: 			 		#ffffff;
+$black: 			 		#000000;
+$red: 						#ff0000;
+$green: 					#3c763d;
+$default-text-color:		#686868;
+$footer-text:				#777777;
+$active-border-color:		#029afa;
+$body-bg-color: 			#ebebeb;
+$light-bg-color:			#f7f7f8;
+$sidebar-bg:				#161616;
+$sidebar-devider:			#3d3d3d;
+$nav-text-color:			#7c7c7c;
+$block-bg:					#d5d5d5;
+$border-color: 				#656565;
+$light-border-color: 		#eeeeee;
+$border-color-active: 		#029afa;
+$active-text-color:			#161616;
+$light-text-color:			#b4b4b4;
+$light-black-color:			#1f1f1f;
+$sub-menu-bg: 				#323232;
+$title-bar-bg:				#282828;
+$gray-color:				#e7e7e7;
+$gray-light:				#5b5b5b;
+$green:						#5cb85c;
+$pink:						#f67575;
+$orange:					#ff942c;
+$scroll-color:				#d8d8d8;
+$breadcrub:					#7e7e7e;
+$graph-bg:					#202020;
+$graph-txt:					#5e5e5e;
+$graph-border:				#3b3b3b;
+$blue:						#00b0da;
+$lamon:						#adda41;
+$lastweek:					#9b9c9c;
+$header-label:				#6b6a6a;
+$header-wc:					#b7b7b7;
+
+//custom screen sizes
+$screen-custom-size: 				1400px;

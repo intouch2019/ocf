@@ -1,0 +1,1 @@
+insert into it_functionality_pages set pagecode = 'purorder',pagename='Purchase Order',pageuri='purchase/order',menuhead='Transactions',sequence = 2,submenu_seq = 12 , createtime = now();

@@ -1,0 +1,10 @@
+1a2
+> 
+9c10
+< class clsAddProcessor extends clsCmdProcessor {
+---
+> class clsFanProcessor extends clsCmdProcessor {
+37c38
+< 		if ($cmd == "addd" && $tok1 == "jlpune") {
+---
+> 		if ($cmd == "add" && $tok1 == "jlpune") {

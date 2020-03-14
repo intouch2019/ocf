@@ -1,0 +1,38 @@
+
+insert into it_functionality_pages set pagecode = 'hq_allocation',pagename='HQ Allocation',pageuri='hq/allocation',menuhead='Manage',sequence=1,submenu_seq = 8 , createtime = now();
+
+insert into it_functionality_pages set pagecode = 'hqallotupload',pagename='HQ Allocation Upload',pageuri='hq/allocation/upload',menuhead = 'Manage', sequence=0, submenu_seq = 0,createtime=now();
+
+| it_hq_allocation | CREATE TABLE `it_hq_allocation` (
+  `id` bigint(20) NOT NULL,
+  `hq_no` bigint(20) NOT NULL,
+  `allocation_dttm` datetime NOT NULL,
+  `purchase_in_location_id` bigint(20) NOT NULL,
+  `total_qty` double NOT NULL DEFAULT '0',
+  `status` tinyint(1) NOT NULL DEFAULT '1',
+  `createtime` datetime NOT NULL,
+  `updatetime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 |
+
+
+| it_hq_allocation_items | CREATE TABLE `it_hq_allocation_items` (
+  `id` bigint(20) NOT NULL,
+  `hq_id` bigint(20) NOT NULL,
+  `product_id` bigint(20) NOT NULL,
+  `dispatch_location_id` bigint(20) NOT NULL,
+  `qty` double NOT NULL,
+  `purpose` int(20) NOT NULL DEFAULT '1',
+  `createtime` datetime NOT NULL,
+  `updatetime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 |
+
+
+create table it_lasthqno(hqno varchar(256) not null default 0);
+
+alter table it_hq_allocation change id id bigint(20) not null auto_increment;
+
+alter table it_hq_allocation_items change id id bigint(20) not null auto_increment;
+
+alter table it_hq_allocation change hq_no hq_no varchar(256) not null;

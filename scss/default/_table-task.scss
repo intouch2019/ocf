@@ -1,0 +1,74 @@
+//
+// Table
+//
+
+.table-task {
+	padding-bottom: 0;
+	padding-right: 5px;
+
+	.table-responsive {
+		height: 390px;
+		overflow: auto;
+
+		&::-webkit-scrollbar {
+	    	width: 3px;
+		}		 
+		&::-webkit-scrollbar-thumb {
+			border-radius: 3px;
+		  	background-color: $scroll-color;
+		}
+
+		thead  {
+			tr {
+				th {
+					background-color: $black;
+					padding: 12px;
+					font-size: 16px;
+					font-weight: normal;
+					color: $white;
+					border-bottom: none;
+					vertical-align: middle;
+				}
+			}
+		}
+		tbody  {
+			tr {
+				td {
+					font-size: 14px;
+					padding:12px;
+					color: $gray-light;
+					vertical-align: middle;
+					border-bottom: 1px solid $light-bg-color;
+
+					button {
+						padding: 5px;
+						font-size: 12px;
+						line-height: 12px;
+						color: $white;
+						min-width: 70px;
+
+						&.btn-approved {
+							background-color: $green;
+						}
+						&.btn-pending {
+							background-color: $pink;
+						}
+						&.btn-suspend {
+							background-color: $orange;
+						}
+					}
+				}
+				&:last-child {
+					td {
+						border-bottom: none;
+					}
+				}
+				&.active-tr {
+					td {
+						@include gradient-horizontal($start-color: $light-bg-color, $end-color: $white, $start-percent: 0%, $end-percent: 100%)
+					}
+				}
+			}
+		}	
+	}
+}

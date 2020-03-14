@@ -1,0 +1,100 @@
+//
+// List
+//
+
+.list-activity {
+    font-size: 22px;
+    list-style: none;
+    padding: 0;
+
+  li {
+    padding: 25px 30px 25px 85px;
+    position: relative;
+    border-bottom: 1px solid $gray-color;
+    color: $title-bar-bg;
+
+    @media (max-width: $screen-xs-min) {
+        padding: 15px 0px 15px 70px;
+    }
+    a {
+        color: $title-bar-bg;
+    }
+
+    &:before {
+        content: '';
+        position: absolute;
+        left: 30px;
+    }
+
+    &.activity-upload {
+        &:before {
+            @include background-image(icon-upload, png, transparent, no-repeat, left, 2px);
+            width: 23px;
+            height: 100%;
+        }
+    }
+    &.activity-dataentry {
+        &:before {
+            @include background-image(icon-dataentry, png, transparent, no-repeat, left, 2px);
+            width: 25px;
+            height: 100%;
+        }
+    }
+    &.activity-download {
+        &:before {
+            @include background-image(icon-download, png, transparent, no-repeat, left, 2px);
+            width: 23px;
+            height: 100%;
+        }
+    }
+  }
+}
+
+.listactivity-small {
+    @extend .list-activity;
+    font-size: 14px;
+
+    li {
+        padding: 15px 15px 15px 55px;
+
+        &:before {
+            left:15px;
+        }
+    }
+}
+
+.breadcrumb-activity {
+    border-left: 5px solid $black;
+    list-style: none;
+    margin-bottom: 0;
+    padding: 0;
+
+    li {
+        display: inline-block;
+        font-size: 16px;
+        color: $breadcrub;
+        padding: 12px 30px 12px 15px;
+
+        a {
+            color: $breadcrub;
+        }
+
+        &.active {
+            color: $black;
+            position: relative;
+            font-weight: bold;
+            a {
+                color: $black;
+            }
+            &:after {
+                @include background-image(icon-caret-right, png, transparent, no-repeat, right, center);
+                content: '';
+                position: absolute;
+                width: 6px;
+                height: 7px;
+                right: 15px;
+                top: 18px;
+            }
+        }
+    }
+}

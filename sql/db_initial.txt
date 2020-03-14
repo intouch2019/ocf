@@ -1,0 +1,48 @@
+
+create database karrot_db;
+ 
+create table it_uom(id bigint(20) not null auto_increment, name varchar(256) not null, createtime datetime not null ,updatetime timestamp not null default current_timestamp on update current_timestamp, primary key(id));
+
+create table it_pack_size (id bigint(20) not null auto_increment, pack_size varchar(256) not null, createtime datetime not null ,updatetime timestamp not null default current_timestamp on update current_timestamp, primary key(id));
+
+create table it_category (id bigint(20) not null auto_increment,name varchar(256) not null, is_active tinyint(1) not null default 1, inactivated_by bigint(20) default null, inactivated_dttm datetime default null,createtime datetime not null ,updatetime timestamp not null default current_timestamp on update current_timestamp, primary key(id), unique key (name));
+
+create table it_products (id bigint(20) not null auto_increment,name varchar(256) not null, uom_id bigint(20) not null, pack_size_id bigint(20) not null, category_id bigint(20) not null, current_rate double default null, is_active tinyint(1) not null default 1,createtime datetime not null ,updatetime timestamp not null default current_timestamp on update current_timestamp, primary key(id));
+
+create table it_locations (id bigint(20) not null auto_increment, name varchar(256) not null, address text default null, is_active tinyint(1) not null default 1,createtime datetime not null ,updatetime timestamp not null default current_timestamp on update current_timestamp, primary key(id));
+
+create table it_bins (id bigint(20) not null auto_increment, bin varchar(256) not null, location_id bigint(20) not null, createtime datetime not null ,updatetime timestamp not null default current_timestamp on update current_timestamp, primary key(id), foreign key (location_id) references it_locations(id));
+
+create table it_stock_current (id bigint(20) not null auto_increment, bin_id bigint(20) not null, product_id bigint(20) not null, qty double not null, createtime datetime not null ,updatetime timestamp not null default current_timestamp on update current_timestamp, primary key(id), foreign key (bin_id) references it_bins(id), foreign key (product_id) references it_products(id));
+
+create table it_stock_diary (id bigint(20) not null auto_increment,bin_id bigint(20) not null, product_id bigint(20) not null, qty double not null, reason text default null, createtime datetime not null ,updatetime timestamp not null default current_timestamp on update current_timestamp, primary key(id), foreign key (bin_id) references it_bins(id), foreign key (product_id) references it_products(id));
+
+create table it_orders (id bigint(20) not null auto_increment, order_no varchar(256) not null, dispatch_location_id bigint(20) not null,createtime datetime not null ,updatetime timestamp not null default current_timestamp on update current_timestamp, primary key(id), foreign key (dispatch_location_id) references it_locations(id));
+
+create table it_order_items (id bigint(20) not null auto_increment, order_id bigint(20) not null, bin_id bigint(20) not null, product_id bigint(20) not null, qty double not null,createtime datetime not null ,updatetime timestamp not null default current_timestamp on update current_timestamp, primary key(id),foreign key (order_id) references it_orders(id), foreign key (bin_id) references it_bins(id), foreign key (product_id) references it_products(id));
+
+create table it_users (id bigint(20) not null auto_increment, name varchar(256) not null, address text default null, phone varchar(256) default null, is_active tinyint(1) not null default 1, username varchar(256) not null, password varchar(256) not null ,createtime datetime not null , createdby bigint(20) not null, updatetime timestamp not null default current_timestamp on update current_timestamp, updatedby bigint(20) default null, primary key(id));
+
+create table it_functionality_pages (id bigint(20) not null auto_increment, pagecode varchar(256) not null, pagename varchar(256) not null, pageuri varchar(256) not null, menuhead varchar(256) not null,sequence int(20) not null, submenu_seq int(20) not null, createtime datetime not null, updatetime timestamp not null default current_timestamp on update current_timestamp, primary key(id));
+
+create table it_location_functionalities (id bigint(20) not null auto_increment, location_id bigint(20) not null, functionality_id bigint(20) not null, is_active tinyint(1) not null default 1, createtime datetime not null ,updatetime timestamp not null default current_timestamp on update current_timestamp, primary key(id),foreign key (location_id) references it_locations(id), foreign key (functionality_id) references it_functionality_pages(id));
+
+create table it_user_location_functionalities(id bigint(20) not null auto_increment, user_id bigint(20) not null, location_functionality_id bigint(20) not null, is_active tinyint(1) not null default 1, createtime datetime not null ,updatetime timestamp not null default current_timestamp on update current_timestamp, primary key(id),foreign key (user_id) references it_users(id), foreign key (location_functionality_id) references it_location_functionalities(id));
+
+insert into it_users set name ='it-admin', username='it-admin',password= md5('intouch25'),createtime=now(), createdby =1;
+
+insert into it_users set name ='user1',address='Pune',phone='8978897889', username='user1',password= md5('demo1'),createtime=now(), createdby =1;
+
+insert into it_users set name ='user2', address='Mumbai', phone='9889678798',username='user2',password=md5('demo1'),createtime= now(),createdby=1;
+
+insert into it_locations set name ='Narayan Gaon', address='Pune', createtime=now();
+
+insert into it_locations set name ='HQ', address='Pune', createtime=now();
+
+insert into it_locations set name ='Wanaworie', address='Pune', createtime=now();
+
+insert into it_functionality_pages set pagecode = 'prod', pagename='Products Upload', pageuri='product', menuhead='Manage', sequence= 1, submenu_seq = 1, createtime=now();
+
+insert into it_location_functionalities set location_id =2 ,functionality_id =1, createtime=now();
+
+insert into it_user_location_functionalities set user_id= 1, location_functionality_id = 1, createtime = now();

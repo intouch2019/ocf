@@ -1,0 +1,52 @@
+CREATE TABLE it_purchase_orders(
+  id bigint(20) NOT NULL AUTO_INCREMENT,
+  po_no varchar(100) NOT NULL,
+  po_date date NOT NULL,
+  pur_location_id bigint(20),
+  status int(11),             
+  created_by bigint(20) NOT NULL,
+  createtime datetime NOT NULL,
+  updatetime timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  updated_by bigint(20) DEFAULT NULL,
+  createdat_location_id bigint(20) DEFAULT NULL,
+  updatedat_location_id bigint(20) DEFAULT NULL,
+  PRIMARY KEY (id)  
+); 
+
+
+
+CREATE TABLE it_purchase_order_items(
+  id bigint(20) NOT NULL AUTO_INCREMENT,
+  po_id bigint(20),
+  parent_location_id bigint(20),
+  child_location_id bigint(20),
+  qty_in_packets double,
+  qty_in_kg double,  
+  created_by bigint(20) NOT NULL,
+  createtime datetime NOT NULL,
+  updatetime timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  updated_by bigint(20) DEFAULT NULL,
+  createdat_location_id bigint(20) DEFAULT NULL,
+  updatedat_location_id bigint(20) DEFAULT NULL,
+  PRIMARY KEY (id)  
+); 
+alter table it_purchase_order_items add product_id bigint(20) after child_location_id;
+
+
+CREATE TABLE it_po_summary(
+  id bigint(20) NOT NULL AUTO_INCREMENT,
+  pur_order_id bigint(20),
+  po_no varchar(100) NOT NULL,
+  pur_location_id bigint(20),
+  parent_location_id bigint(20),
+  tot_packet_qty double,
+  tot_kg_qty double,  
+  buffer_qty double, 
+  created_by bigint(20) NOT NULL,
+  createtime datetime NOT NULL,
+  updatetime timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  updated_by bigint(20) DEFAULT NULL,
+  createdat_location_id bigint(20) DEFAULT NULL,
+  updatedat_location_id bigint(20) DEFAULT NULL,
+  PRIMARY KEY (id)  
+); 

@@ -1,0 +1,285 @@
+//
+// Header
+//
+
+header {
+	@include background-image(bg-header, jpg, transparent, repeat-x, left, top);
+	border-bottom: solid 2px $active-border-color;
+	min-height: 62px;
+	position: fixed;
+	width: 100%;
+	z-index: 10;
+
+	@media (max-width: $screen-xs-max) {
+		min-height: 31px;
+	}
+
+	// logo section
+	.logo {
+		float: left;
+		margin-left: 68px;
+
+		@media (max-width: $screen-xs-max) {
+			margin-left: 36px;
+		}
+
+		a {
+			@include background-image(bg-logo, jpg, transparent, repeat-x, left, top);
+			height: 60px;
+			width: 110px;
+			text-align: center;
+			display: table-cell;
+			vertical-align: middle;
+			position: relative;
+
+			@media (max-width: $screen-sm-max) {
+				width: 96px; 
+			}
+
+			@media (max-width: $screen-xs-max) {
+				height: 29px;
+				width: 56px;
+			}
+		}
+
+		img {
+			@media (max-width: $screen-xs-max) {
+				max-width: 50%;
+			}
+		}		
+	}
+
+	// notification and profile section on top
+	.navbar-right {
+		padding: 8px 0px 0px 0px;
+		margin: 0px;
+		float: right;
+
+		@media (max-width: $screen-xs-max) {
+			padding: 0px;
+		}
+
+		.nav {
+			margin: 0px;
+
+			@media (max-width: $screen-xs-max) {
+				margin: 5px 0 0 0;
+			}
+
+			> li {
+				float: left;
+
+				> a {
+					padding: 0px;
+					text-decoration: none;
+
+					&:hover, a:focus {
+						background: none;
+						text-decoration: none;
+					}
+				}
+
+				&.notifications-menu {
+					a {
+						padding: 12px 15px 0px 15px;
+						display: inline-block;
+						text-decoration: none;
+
+						@media (max-width: $screen-xs-max) {
+							padding: 0px 10px 0px 10px;
+						}
+					}
+
+					i {
+						font-size: 24px;
+						color: $white;
+
+						@media (max-width: $screen-xs-max) {
+							font-size: 18px;
+						}
+					}
+
+					.label {
+						-webkit-border-radius: 50%;
+						-moz-border-radius: 50%;
+						border-radius: 50%;
+						position: absolute;
+						top: -2px;
+						right: 2px;
+						font-size: 14px;
+						font-weight: normal;
+						width: 24px;
+						height: 24px;
+						line-height: 22px;
+						text-align: center;
+						padding: 2px;
+
+						@media (max-width: $screen-xs-max) {
+							width: 16px;
+							height: 16px;
+							font-size: 10px;
+							line-height: 12px;
+						}
+
+					}
+				}
+
+				&.user-menu {
+					margin-right: 40px;
+					margin-left: 35px; 
+
+					@media (max-width: $screen-sm-max) {
+						margin-right: 10px;
+						margin-left: 10px; 
+					}
+
+					a {
+						i {
+							position: absolute;
+							bottom: 10px;
+							right: -2px;
+							width: 12px;
+							height: 12px;
+							border: solid 1px $white;
+							border-radius: 100%;
+							font-size: 10px;
+
+							@media (max-width: $screen-xs-max) {
+								bottom: 5px;
+								right: -2px;
+								width: 10px;
+								height: 10px;
+							}
+
+							&.offline {
+								background-color: $body-bg;
+							}
+
+							&.online {
+								background-color: $green;
+							}
+						}
+					}
+
+					img {
+						max-width: 45px;
+						max-height: 45px;
+
+						@media (max-width: $screen-xs-max) {
+							max-width: 22px;
+							max-height: 22px; 
+						}
+					}
+				}
+				&.notifications-label {
+					font-size: 18px;
+					color: $header-label;
+					padding-top: 11px;
+
+					@media (max-width: $screen-sm-max) {
+						padding-top: 14px;
+						font-size: 16px; 
+					}
+
+					span {
+						margin: 0 5px;
+					}
+				}
+				&.notifications-wc {
+					margin-left: 15px;
+					font-size: 20px;
+					color: $header-wc;
+					padding-top: 9px;
+
+					@media (max-width: $screen-sm-max) {
+						padding-top: 14px;
+						font-size: 16px; 
+					}
+
+					@media (max-width: $screen-xs-max) {
+						font-size:13px;
+						padding-top: 0px;
+					}
+				}
+			}
+		}
+	}
+
+	// Navbar toggle button for mobile
+	.navbar-toggle {
+		position: absolute;
+		float: none;
+		padding: 6px;
+		margin: 1px 0px 0px 1px;
+
+		 .icon-bar {
+		 	background-color: $white;
+		 	width: 20px;
+		 }
+	}
+}
+
+.sub-navigation {
+	background-color: $sub-menu-bg;
+	padding: 10px;
+
+	&:before, &:after {
+	    content: " ";
+	    display: table;
+	}
+  	&:after {
+	    clear: both;
+	}
+
+	ul {
+		margin: 0px;
+		padding: 0px;
+		list-style: none;
+
+		li {
+			color: $default-text-color;
+			margin: 0px;
+			padding: 0px;
+			font-size: 16px;
+			float: left;
+
+			&:first-child {
+				color: $white;
+				font-size: 20px;
+				padding-right: 30px;
+				position: relative;
+
+				@media (max-width: $screen-xs-max) {
+					font-size: 14px;
+					padding-right: 10px;
+				}
+
+				&:after {
+					content: '';
+					position: absolute;
+					top: 6px;
+					right: 10px;
+					background-color: $white;
+					width: 1px;
+					height: 20px;
+
+					@media (max-width: $screen-xs-max) {
+						height: 10px;
+						right: 4px;
+					}
+				}
+			}
+
+			a {
+				color: $default-text-color;
+				padding: 4px 10px 2px 10px;
+				display: inline-block;
+
+				@media (max-width: $screen-xs-max) {
+					padding: 0px 5px 2px 5px;
+					font-size: 14px;
+				}
+			}
+		}
+	}
+}

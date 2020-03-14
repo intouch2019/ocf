@@ -1,0 +1,21 @@
+CREATE TABLE it_suppliers(
+  id bigint(20) NOT NULL AUTO_INCREMENT,
+  name varchar(256) NOT NULL,
+  address varchar(256) NULL DEFAULT NULL,
+  phone varchar(50) NULL DEFAULT NULL,
+  is_active tinyint(1) NOT NULL DEFAULT '1',
+  city varchar(50) NULL DEFAULT NULL,
+  pincode int(11) NULL DEFAULT NULL,   
+  createtime datetime NOT NULL,
+  createdby bigint(20) NOT NULL,
+  updatetime timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  updatedby bigint(20) DEFAULT NULL,
+  createdat_location_id bigint(20) DEFAULT NULL,
+  updatedat_location_id bigint(20) DEFAULT NULL,
+  PRIMARY KEY (id)
+);
+
+insert into  it_functionality_pages set  pagecode = "supp",pagename="Suppliers",pageuri="suppliers",menuhead="Manage",sequence=1,submenu_seq=7,createtime=now() ;
+insert into  it_functionality_pages set  pagecode = "suppcreate",pagename="Supplier Create",pageuri="supplier/create",menuhead="Manage",sequence=0,submenu_seq=0,createtime=now() ;
+insert into  it_functionality_pages set  pagecode = "suppedit",pagename="Supplier Edit",pageuri="supplier/edit",menuhead="Manage",sequence=0,submenu_seq=0,createtime=now() ;
+

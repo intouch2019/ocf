@@ -1,0 +1,295 @@
+//
+// Sign up and Login
+//
+
+.sing-up {
+	padding: 40px 40px 40px 0px;
+
+	@media (max-width: $screen-xs-max) {
+        padding: 20px 0px;
+    }
+}
+
+.sign-up-listing-area {
+	h1 {
+		font-size: 28px;
+		font-weight: 700;
+		margin: 0px 0px 7px 0px;
+		padding: 0px 0px 7px 0px;
+		color: $light-black-color;
+		text-transform: uppercase;
+		border-bottom: solid 1px $border-color;
+
+		@media (max-width: $screen-xs-max) {
+			font-size: 20px;
+		}
+	}
+
+	p {
+		font-size: 24px;
+		color: $light-black-color;
+
+		@media (max-width: $screen-xs-max) {
+			font-size: 18px;
+		}
+	}
+}
+
+.sign-up-listing {
+	margin: 40px 0px 20px 0px;
+	padding: 0px;
+	list-style: none;
+
+	@media (max-width: $screen-xs-max) {
+		margin: 20px 0px;
+	}
+	
+	&:before, &:after {
+	    content: " ";
+	    display: table;
+	}
+
+  	&:after {
+    	clear: both;
+	}
+
+
+	li {
+		font-size: 24px;
+		color: #696d6f;
+		line-height: normal;
+		margin-bottom: 20px;
+
+		@media (min-width: $screen-custom-size) {
+	        font-size: 28px;
+	    }
+
+		@media (max-width: $screen-xs-max) {
+			font-size: 16px;
+			float: left;
+			width: 50%;
+			margin-bottom: 15px;
+		}
+
+		&:last-child {
+			margin-bottom: 0px;
+		}
+
+		a {
+			color: #696d6f;
+			padding-left: 90px;
+			min-height: 80px;
+			display: inline-block;
+
+			@media (max-width: $screen-xs-max) {
+				padding-left: 45px;
+				min-height: 40px;
+			}
+		}
+
+		&.supply-tracking {
+			a {
+				@include background-image(icon-suppy-tracking, png, transparent, no-repeat, left, 7px);
+				background-size: 65px;
+
+				@media (min-width: $screen-custom-size) {
+			        background-size: initial;
+			    }
+
+				@media (max-width: $screen-xs-max) {
+					background-position: left 5px;
+					background-size: 35px;
+				}
+			}
+		}
+
+		&.data-management {
+			a {
+				@include background-image(icon-channel-data-management, png, transparent, no-repeat, left, 7px);
+				
+				@media (max-width: $screen-xs-max) {
+					background-position: left 5px;
+					background-size: 35px;
+				}
+			}
+		}
+
+		&.retail-solution {
+			a {
+				@include background-image(icon-retail-mall-solution, png, transparent, no-repeat, left, 0px);
+
+				@media (max-width: $screen-xs-max) {
+					background-position: left 5px;
+					background-size: 35px;
+				}
+			}
+		}
+	}
+}
+
+.sing-up-block {
+	border-radius: 5px;
+	background-color: rgba($white, 0.8);
+	border: solid 1px #e0e0e0;
+	padding: 30px;
+	margin-top: 5px;
+
+	@media (min-width: $screen-custom-size) {
+        padding: 40px;
+    }
+
+    @media (max-width: $screen-xs-max) {
+    	padding: 10px 20px;
+    }
+
+	h2 {
+		text-align: center;
+		font-size: 30px;
+		color: $light-black-color;
+		margin-bottom: 20px;
+
+		@media (min-width: $screen-custom-size) {
+	        font-size: 40px;
+	    }
+
+		@media (max-width: $screen-xs-max) {
+	    	font-size: 20px;
+	    	margin-bottom: 10px;
+	    }
+	}
+
+	.form-group {
+		margin-bottom: 20px;
+
+		@media (max-width: $screen-xs-max) {
+	    	margin-bottom: 10px;
+	    }
+	}
+
+	.form-control {
+		background-color: $light-bg-color;
+		box-shadow: none;
+		border: solid 1px $light-border-color;
+		border-radius: 3px;
+		height: 50px;
+		text-align: center;
+		font-size: 20px;
+		width: 100%;
+		max-width: 364px;
+		margin: 0px auto;
+
+		@media (max-width: $screen-xs-max) {
+			height: 32px;
+	    	font-size: 16px;
+	    }
+	}
+
+	button {
+		width: 100%;
+		max-width: 364px;
+		border-radius: 0px;
+		height: 50px;
+		font-size: 20px;
+		background-color: $light-black-color;
+		color: $white;
+		border: 0px;
+		display: block;
+		margin: 0px auto 10px auto;
+
+		@media (max-width: $screen-xs-max) {
+			height: 32px;
+	    	font-size: 16px;
+	    }
+
+		&:hover, &:focus, &:active, &:active:focus {
+			background-color: $light-black-color;
+			color: $white;
+		}
+
+		i {
+			@include background-image(arrow-right-white, png, transparent, no-repeat, left, top);
+			width: 22px;
+			height: 15px;
+			margin-left: 15px;
+
+			&:before {
+				display: none;
+			}
+		}
+	}
+
+	p {
+		text-align: center;
+		font-size: 18px;
+		color: #a0a0a0;
+
+		@media (max-width: $screen-xs-max) {
+			font-size: 16px;
+	    }
+	}
+
+	a {
+		text-decoration: underline;
+		color: #a0a0a0;
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+
+	&.sing-up-details {
+
+		h2 {
+			margin-bottom: 40px;
+
+			@media (max-width: $screen-xs-max) {
+				margin-bottom: 10px;
+			}
+		}
+
+		label {
+			font-size: 18px;
+			padding-top: 0px;
+			font-weight: normal;
+
+			@media (max-width: $screen-xs-max) {
+				font-size: 14px;
+			}
+		}
+		.form-control {
+			background: none;
+			border: 0px;
+			border-bottom: solid 1px $light-border-color;
+			border-radius: 0px;
+			text-align: left;
+			height: auto;
+			font-size: 18px;
+			padding: 0px;
+			max-width: 100%;
+
+			@media (max-width: $screen-xs-max) {
+				font-size: 14px;
+			}
+		}
+
+		.edit-input {
+			position: relative;
+
+			a {
+				position: absolute;
+				top: 5px;
+				right: 0px;
+				font-size: 12px;
+				text-decoration: none;
+			}
+		}
+
+		button {
+			margin-top: 30px;
+
+			@media (max-width: $screen-xs-max) {
+				margin-top: 10px;
+			}
+		}
+	}
+}

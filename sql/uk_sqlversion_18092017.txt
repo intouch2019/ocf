@@ -1,0 +1,26 @@
+alter table it_user_location_functionalities add location_id bigint(20) after user_id;
+alter table it_category add createdby bigint(20);
+alter table it_category add createdat_location_id bigint(20);
+alter table it_locations add createdat_location_id bigint(20);
+alter table it_locations add updatedat_location_id bigint(20);
+alter table it_products  add createdby bigint(20);
+alter table it_products add createdat_location_id bigint(20);
+alter table it_products  add updatedby bigint(20);
+alter table it_products add updatedat_location_id bigint(20);
+alter table it_category add updatedat_location_id bigint(20);
+alter table it_location_functionalities  add createdat_location_id bigint(20);
+alter table it_location_functionalities  add createdby bigint(20);
+alter table it_location_functionalities  add updatedby bigint(20);
+alter table it_location_functionalities  add updatedat_location_id bigint(20);
+alter table it_pack_size  add createdby bigint(20);
+alter table it_pack_size  add createdat_location_id bigint(20);
+alter table it_rate_diary  add createdat_location_id bigint(20);
+alter table it_uom  add createdat_location_id bigint(20);
+alter table it_user_location_functionalities  add createdby bigint(20);
+alter table it_user_location_functionalities  add createdat_location_id bigint(20);
+alter table it_user_location_functionalities  add updatedby bigint(20);
+alter table it_user_location_functionalities  add updatedat_location_id bigint(20);
+alter table it_users  add createdat_location_id bigint(20);
+alter table it_users  add updatedat_location_id bigint(20);
+
+

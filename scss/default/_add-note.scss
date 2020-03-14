@@ -1,0 +1,49 @@
+//
+// Form
+//
+
+.add-note {
+	padding: 15px 5px 10px 5px;
+
+	textarea {
+		padding: 10px; 
+		border:none;
+		width: 100%;
+		resize: vertical;
+		font-size: 12px;
+		max-height: 125px;
+		overflow: auto;
+
+		&::-webkit-scrollbar {
+	    	width: 3px;
+		}		 
+		&::-webkit-scrollbar-thumb {
+			border-radius: 3px;
+		  background-color: $gray-color;
+		}
+	}
+	.controls {
+		margin-top: 15px;
+		border-top: 1px solid $light-bg-color;
+		padding: 5px 15px 0 15px;
+		width: 80%;
+
+		@media (max-width: $screen-xs-max) {
+			width:100%;
+		}
+
+		button[type="submit"] {
+			border:none;
+			@include background-image(icon-save, png, transparent, no-repeat, left, 0);
+			padding: 0 33px;
+
+			font-size: 12px;
+		}
+		button[type="reset"] {
+			border:none;
+			@include background-image(icon-cancel, png, transparent, no-repeat, left, 3px);
+			padding-left: 20px;
+			font-size: 12px;
+		}
+	}
+}

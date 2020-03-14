@@ -1,0 +1,22 @@
+insert into it_functionality_pages set pagecode = 'locedit', pagename= 'Location Edit' , pageuri = 'location/edit', menuhead ='Manage', sequence =0, submenu_seq = 0 , createtime = now();
+insert into it_location_functionalities set location_id = 2, functionality_id= 7, createtime =now();
+insert into it_user_location_functionalities set user_id = 1, location_functionality_id = 8, createtime = now();
+
+update it_locations set city='Pune',pincode= 411001,is_active=1,created_by=1;
+
+alter table it_locations add updated_by bigint(20) default null after updatetime;
+alter table it_locations change city city varchar(50) not null;
+alter table it_locations change pincode pincode int(11) not null;
+alter table it_locations change created_by created_by bigint(20) not null;
+
+update it_users set address ='Pune' , phone = '8998835265' where id =1;
+alter table it_users change address address text not null;
+alter table it_users change phone phone varchar(50) not null;
+
+insert into it_functionality_pages set pagecode = 'useredit', pagename= 'User Edit' , pageuri = 'user/edit', menuhead ='Manage', sequence =0, submenu_seq = 0 , createtime = now();
+insert into it_location_functionalities set location_id = 2, functionality_id= 8, createtime =now();
+insert into it_user_location_functionalities set user_id = 1, location_functionality_id = 9, createtime = now();
+
+alter table it_products add product_ref_id bigint(20) not null after is_active;
+alter table it_products add product_data text not null after is_active;
+alter table it_products add product_handle varchar(256) not null after product_ref_id;

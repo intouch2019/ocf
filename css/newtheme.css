@@ -1,0 +1,475 @@
+/* 
+    Document   : newtheme
+    Created on : Nov 22, 2012, 12:40:56 PM
+    Author     : intouch
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+root { 
+    display: block;
+}
+
+#topcolor {
+    background: #161616;
+    height:55px;
+    width:100%;
+    margin-left:0px;
+    margin-top:0px;
+    margin-right: 200px;
+    background-image: url('../images/bg-header.jpg');
+    background-repeat:repeat-x;
+    border-bottom: solid 2px #029afa;
+}
+#sidecolor {
+    background: #161616;
+    height:52px;
+    width:100%;
+    margin-left:-430px; height: 970px; width:54px;
+    margin-top: 0px; float:left; 
+    //background-image: url("../images/logo.png") ;
+    background-repeat: no-repeat;
+    background-position: 6% 0%;
+}
+#sidecolor1 {
+    background: white;
+    /*width:100%;*/
+    margin-top:100px;
+    margin-left:-430px; 
+    height: 450px;
+    width:54px;
+    float:left; 
+    //background-image: url("../images/logo.png") ;
+    background-repeat: no-repeat;
+    background-position: 6% 0%;
+}
+#menubar {
+    background: #686868;
+    height:25px;
+    width:100%;
+    margin-left:0;
+    margin-top:-15px;
+    //background-image: url("../images/logo.png") ;
+    background-repeat: no-repeat;
+    background-position: 6% 0%;
+}
+#limelight {
+    z-index: -10; width:100%; 
+    margin-left:0;  
+    height:2px; 
+    width:100%;
+    background:#029afa ; /* Old browsers rgb(204, 153, 0) */
+background: -moz-linear-gradient(top, rgba(194, 50, 11, 0.92,1) 0%, rgba(191,232,249,1) 50%, rgba(159,216,239,1) 51%, rgb(204, 153, 0) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(194, 50, 11, 0.92,1)), color-stop(50%,rgba(191,232,249,1)), color-stop(51%,rgba(159,216,239,1)), color-stop(100%,rgb(204, 153, 0))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, rgba(194, 50, 11, 0.92,1) 0%,rgba(191,232,249,1) 50%,rgba(159,216,239,1) 51%,rgb(204, 153, 0) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, rgba(194, 50, 11, 0.92,1) 0%,rgba(191,232,249,1) 50%,rgba(159,216,239,1) 51%,rgb(204, 153, 0) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, rgba(194, 50, 11, 0.92,1) 0%,rgba(191,232,249,1) 50%,rgba(159,216,239,1) 51%,rgb(204, 153, 0) 100%); /* IE10+ */
+background: linear-gradient(to bottom, rgba(194, 50, 11, 0.92,1) 0%,rgba(191,232,249,1) 50%,rgba(159,216,239,1) 51%,rgb(204, 153, 0) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#CC9900', endColorstr='#CC9900',GradientType=0 ); /* IE6-9 */}
+
+#bottomstreak {
+    z-index: -10; width:100%; 
+    margin-left:0;  
+    height:6px;
+    background-color: black;
+}
+
+/*#banner {
+    height:150px;background-color:#0d0d0d;background-image:url(../images/limelight-header.jpg);
+    background-repeat:no-repeat; 
+    border:solid 4px #FFA970;
+    margin-top:-100px;
+    background-size:99.9%;
+}*/
+
+#banner {
+    height:150px;background-color:#fff;    
+    //background-image:url(../images/logo.png);
+    //background-image-size: 10px 60px;    
+    background-repeat:no-repeat; 
+    border:solid 4px #CC9900;//#DF5B2D; //#FFA970;
+    margin-top:-100px;
+    background-size:45%;
+    background-position: center;
+    //background-size: 65%;
+}
+
+#imagebackground {
+    background: #f2f6f8; /* Old browsers */
+background: -moz-linear-gradient(-45deg, #f2f6f8 0%, #b5c6d0 26%, #d8e1e7 39%, #d8e1e7 61%, #b5c6d0 74%, #e0eff9 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#f2f6f8), color-stop(26%,#b5c6d0), color-stop(39%,#d8e1e7), color-stop(61%,#d8e1e7), color-stop(74%,#b5c6d0), color-stop(100%,#e0eff9)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(-45deg, #f2f6f8 0%,#b5c6d0 26%,#d8e1e7 39%,#d8e1e7 61%,#b5c6d0 74%,#e0eff9 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(-45deg, #f2f6f8 0%,#b5c6d0 26%,#d8e1e7 39%,#d8e1e7 61%,#b5c6d0 74%,#e0eff9 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(-45deg, #f2f6f8 0%,#b5c6d0 26%,#d8e1e7 39%,#d8e1e7 61%,#b5c6d0 74%,#e0eff9 100%); /* IE10+ */
+background: linear-gradient(135deg, #f2f6f8 0%,#b5c6d0 26%,#d8e1e7 39%,#d8e1e7 61%,#b5c6d0 74%,#e0eff9 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f6f8', endColorstr='#e0eff9',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+padding-bottom: 10px; padding-left:10px;margin-right:10px;
+}
+
+.menuselect {
+    /*font-style: italic;*/
+    text-decoration: underline;
+}
+
+#tablebox {
+    background: white; 
+    /*border: 2px;*/
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    /*box-shadow: 0px 4px 20px 4px #888888;*/
+    border:solid 1px #cfcfcf ;
+    padding:6px 2px 3px 2px;
+}
+
+.topmenu {
+    padding:8px;
+    padding-left: 40px;
+    padding-right: 40px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    color:#ffffff;
+    //background-color:#df5b2d;
+    background-color: #686868;//#006600;
+   //font-weight: lighter;
+   font-size: 14px;
+    font:15px/1.5 Roboto;
+/*    border: 1px groove;*/
+border: 1px;
+border-radius: 2px;   
+margin-top:-4px;
+margin-bottom:10px; 
+float: right;
+font-weight: normal;
+margin-left:10px;
+}
+
+.topmenu:hover {
+    color:black;
+    cursor:pointer;
+}
+
+
+.button {
+    background-color: #686868;
+    border: 1px none;
+    border-radius: 2px;
+    color: #ffffff;
+    font-weight: normal;
+    font-size: 12px;
+    padding: 2px 10px 2 px 10px;
+    margin-bottom: 2px;
+    font:12px/1.5 Roboto;
+    margin-top: 2px;
+    //width:80%;
+
+}
+
+.button:hover {
+    color:black;
+    cursor:pointer;
+}
+
+
+.styled-select {
+   width: 19%;
+   margin-bottom:5px;
+   height: 33px;
+   overflow: hidden;
+   background: url(../images/down_arrow_select.jpg) no-repeat right #ddd;
+   border: 1px solid #ccc;
+   }
+   
+.styled-select select {
+   width:100%;
+   padding: 5px;
+   font-size: 16px;
+   line-height: 1;
+   border: 0;
+   border-radius: 0;
+   height: 34px;
+   }
+   
+   .box h3 {
+font-size: 1em;
+font-weight: normal;
+text-transform: uppercase;
+color: #161616;//white;
+//background: rgba(194, 50, 11, 0.92);
+background: white;//rgba(195, 135, 12, 0.92);
+margin: -10px -10px 0 -10px;
+padding: 6px 12px;
+}
+.box h3 a,
+.box h3 a.visible {
+	color:#fff;
+	background:#333 url("../img/switch_minus.gif") 97% 50% no-repeat;
+	display:block;
+	padding:6px 12px;
+	margin:-6px -12px;
+	border:none;
+}
+.grid_4 .box h3 a {
+	background-position: 97% 50%;
+}
+.grid_5 .box h3 a {
+	background-position: 98% 50%;
+}
+.grid_12 .box h3 a {
+	background-position: 99% 50%;
+}
+
+
+.box h3 a.hidden,
+.box h3 a.hidden:hover {
+	background-image: url("../img/switch_plus.gif");
+}
+.box h3 a:hover {
+	background-color:#111;
+}
+
+.box3 {
+    margin-bottom:20px;
+	padding:10px 10px 1px 10px;
+        box-shadow: 10px 0px 20px -8px #000, -10px 0px 20px -8px #000;
+background: #ffffff; /* Old browsers */
+background: -moz-linear-gradient(left, #ffffff 0%, #d3d3d3 25%, #f1f1f1 35%, #cecece 58%, #f1f1f1 70%, #cecece 83%, #ffffff 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,#ffffff), color-stop(25%,#d3d3d3), color-stop(35%,#f1f1f1), color-stop(58%,#cecece), color-stop(70%,#f1f1f1), color-stop(83%,#cecece), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left, #ffffff 0%,#d3d3d3 25%,#f1f1f1 35%,#cecece 58%,#f1f1f1 70%,#cecece 83%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left, #ffffff 0%,#d3d3d3 25%,#f1f1f1 35%,#cecece 58%,#f1f1f1 70%,#cecece 83%,#ffffff 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left, #ffffff 0%,#d3d3d3 25%,#f1f1f1 35%,#cecece 58%,#f1f1f1 70%,#cecece 83%,#ffffff 100%); /* IE10+ */
+background: linear-gradient(to right, #ffffff 0%,#d3d3d3 25%,#f1f1f1 35%,#cecece 58%,#f1f1f1 70%,#cecece 83%,#ffffff 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
+
+}
+#wrapper {
+    margin-left:auto;
+    margin-right:auto;
+    width:100%;
+    height: 100%;
+}
+
+/*#logintextbox{
+    float:left;
+    height:40px;
+    width:275px;
+    text-align: center;
+    margin-right:18%;
+    margin-left:23%; 
+    background-color: #f7f7f8;
+    border:solid 1px #eeeeee ;
+    border-radius:2px; 
+    //font-size:20px;   
+    font: 15px/1.5 Roboto;
+}*/
+
+.logintextbox{
+    float:left;
+    height:40px;
+    width:275px;
+    text-align: center;
+    margin-right:18%;
+    margin-left:23%; 
+    background-color: #f7f7f8;
+    border:solid 1px #00b0da ;
+    border-radius:2px; 
+    //font-size:20px;   
+    font: 15px/1.5 Roboto;
+}
+.logintextbox1{
+    float:left;
+    height:40px;
+    width:275px;
+    text-align: center;
+    margin-right:18%;
+    margin-left:23%; 
+    background-color: #f7f7f7;
+    border:solid 1px #eeeeee ;
+    border-radius:2px; 
+    //font-size:20px;   
+    font: 15px/1.5 Roboto;
+}
+/*#loginbutton{
+    float:left; 
+    font-size: 15px;
+    color:#ffffff; 
+    height:40px; 
+    width:280px;
+    margin-right:18%; 
+    margin-left:23%;
+    background-color: #1f1f1f; 
+    border:solid 1px #adadad ;
+    border-radius:2px;   
+    font: 18px/1.5 Roboto; 
+}*/
+
+.loginbutton{
+    float:left; 
+    font-size: 15px;
+    color:#ffffff; 
+    height:40px; 
+    width:280px;
+    margin-right:18%; 
+    margin-left:23%;
+    background-color: #1f1f1f; 
+    border:solid 1px #adadad ;
+    border-radius:2px;   
+    font: 18px/1.5 Roboto; 
+}
+#titletag{
+   color:#e7e7e7;
+   height:55px ;
+   width:100px ;
+   float:left;
+   margin-left:-50px;
+   background-color:#686868;
+   background-repeat:repeat-x;
+   background-image: url('../images/bg-logo.jpg');
+}
+#uploadbutton{
+ margin-top:-7px; 
+ height: 40px;
+ margin-bottom:10px; 
+ margin-left: 40%;
+}
+
+.userinfo{
+/*    color:#cfcfcf; */
+    float:right;
+    font-size: 14px;
+    margin-top: -10px;
+    font-weight: bolder;  
+    padding-right:0;
+    width:550px;
+    margin-right:-340px;
+    margin-left:-150px; 
+}
+
+#loginpage{
+    position: inherit;
+    background-color:#e7e7e7;
+    
+    /*opacity:0.95;*/
+    background-position: 400px;
+    background-repeat: repeat-x;
+    background-repeat: repeat-y;
+    background-image: url('../images/bg-main.png');
+    height: 600px;
+}
+#line{
+    line-height: normal;
+    width: 1000px;
+}
+/* Tooltip container */
+.tooltip {
+    /*position: relative;*/
+    display: inline-block;
+    /*border-bottom: 1px dotted black;  If you want dots under the hoverable text */
+    
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 80px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 1px;
+ 
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+.sign-up-listing {
+    margin: 40px 0px 10px 0px;
+    padding: 0px;
+    list-style: none;
+}
+.sign-up-listing li.supply-tracking a {
+    background-image: url("../var/www/weikfield_kiosks/home/images/icon-suppy-tracking.png");
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: left 7px;
+    background-size: 20px;
+     
+}
+.sign-up-listing li a {
+    color: #696d6f;
+    padding-left: 30px;
+    min-height: 80px;
+    display: inline-block;
+    font-weight:400;
+}
+.sign-up-listing li {
+    font-size: 24px;
+    color: #696d6f;
+    line-height: normal;
+    margin-bottom: 20px;
+    alignment-baseline: text-after-edge;
+}
+/*#login{
+    text-align: center;
+    font-size: 30px;
+    color: #1f1f1f;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}*/
+.login{
+    text-align: center;
+    font-size: 30px;
+    color: #1f1f1f;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.selectbox{
+    width:85%;
+    font: 15px/1.5 Roboto; 
+    border:1px solid #00b0da; 
+    text-align: center; 
+    color: #686868; 
+    float: right;
+    background-color: #f7f7f7;
+}
+.selectdiv{
+    height:45px;
+    width:63%;
+    margin-left:13.5%; 
+}
+    .img-circle {
+        border-radius: 50%;
+        width:35px;
+    }
+    
+    div.vertical-line{
+/*      width: 1px;  Use only border style 
+      height: 100%;
+      float: left; 
+      border: 1px inset;  This is default border style for <hr> tag */
+      height: 28px;
+      width: 0.3%; 
+      float:left;
+      background-color:#686868;
+      border:none;
+    }
+#lt { text-align:center; }
+
+.inputfile {
+  color: #161616;
+  width:275px;
+  font-size: 15px;
+  border:1px solid;
+  border-radius: 2px;
+  border-color: #00b0da;
+}

@@ -1,0 +1,11 @@
+alter table it_bins add createdby bigint(20) null after updatetime;
+alter table it_bins add updatedby bigint(20) null after updatetime;
+alter table it_bins add is_active tinyint(1) not null default 1 after location_id;
+
+create index name on it_products(name);
+
+insert into it_functionality_pages set pagecode = 'binedit', pagename= 'Bin Edit' , pageuri = 'bin/edit', menuhead ='Manage', sequence =0, submenu_seq = 0 , createtime = now();
+insert into it_location_functionalities set location_id = 2, functionality_id= 14, createtime =now();
+insert into it_user_location_functionalities set user_id = 1, location_id = 2, location_functionality_id = 15, createtime = now();
+
+create unique index unique_name on it_bins(location_id,bin);

@@ -1,0 +1,33 @@
+CREATE TABLE it_hub_stock(
+  id bigint(20) NOT NULL AUTO_INCREMENT,
+  location_id bigint(20),
+  stock_date date NOT NULL,             
+  created_by bigint(20) NOT NULL,
+  createtime datetime NOT NULL,
+  updatetime timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  updated_by bigint(20) DEFAULT NULL,
+  createdat_location_id bigint(20) DEFAULT NULL,
+  updatedat_location_id bigint(20) DEFAULT NULL,
+  PRIMARY KEY (id)  
+); 
+
+
+CREATE TABLE it_hub_stock_items(
+  id bigint(20) NOT NULL AUTO_INCREMENT,
+  hub_stock_id bigint(20),
+  location_id bigint(20),
+  product_id bigint(20),
+  qty double,             
+  created_by bigint(20) NOT NULL,
+  createtime datetime NOT NULL,
+  updatetime timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  updated_by bigint(20) DEFAULT NULL,
+  createdat_location_id bigint(20) DEFAULT NULL,
+  updatedat_location_id bigint(20) DEFAULT NULL,
+  PRIMARY KEY (id)  
+); 
+
+insert into it_functionality_pages set pagecode = 'hbstock',pagename = 'Hub Stock',pageuri="hb/stock/upload",menuhead='Transactions',sequence= 2, submenu_seq = 11 , createtime = now();
+
+
+//update it_functionality_pages set pagename = "Hub Stock OldPG" , submenu_seq = 9 where id = 44;

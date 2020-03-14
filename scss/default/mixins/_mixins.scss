@@ -1,0 +1,24 @@
+// Image Mixins
+// - Responsive image
+// - Retina image
+
+
+// Include custom image
+
+@mixin background-image($name, $ext, $bg-color, $repeat, $horz, $vert) {
+  background-image: url("#{$imgPath}#{$name}.#{$ext}");
+  background-color: $bg-color;
+  background-repeat: $repeat;
+  background-position: $horz $vert;
+}
+
+@function em($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}em;
+}
+
+@mixin gradient-horizontal($start-color: #555, $end-color: #333, $start-percent: 0%, $end-percent: 100%) {
+  background-image: -webkit-linear-gradient(top, $start-color $start-percent, $end-color $end-percent);
+  background-image: -o-linear-gradient(top, $start-color $start-percent, $end-color $end-percent);
+  background-image: linear-gradient(to bottom, $start-color $start-percent, $end-color $end-percent);
+  background-repeat: repeat-x;
+}

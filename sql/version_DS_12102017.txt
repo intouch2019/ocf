@@ -1,0 +1,1 @@
+insert into it_functionality_pages set pagecode = 'hubstock',pagename='Hub Stock',pageuri='hub/stock',menuhead='Transactions',sequence = 2,submenu_seq = 11,createtime = now();

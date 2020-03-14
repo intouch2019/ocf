@@ -1,0 +1,35 @@
+//
+// Icons
+//
+
+@mixin stitches-side-navbar ($x: 0, $y: 0, $width: 0, $height: 0) {
+    background-position: $x $y;
+    width: $width;
+    height: $height;
+}
+
+.left-navbar {
+    background-image: url(../images/side-navbar.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+
+    &.nav-icon-calendar {
+        @include stitches-side-navbar (-5px, -5px, 34px, 34px);
+    }
+
+    &.nav-icon-chat {
+        @include stitches-side-navbar (-93px, -5px, 32px, 29px);
+    }
+
+    &.nav-icon-dashboard {
+        @include stitches-side-navbar (-177px, -5px, 30px, 30px);
+    }
+
+    &.nav-icon-notepad {
+        @include stitches-side-navbar (-257px, -5px, 31px, 35px);
+    }    
+
+    &.nav-icon-setting {
+        @include stitches-side-navbar (-339px, -5px, 32px, 32px);
+    }
+}

@@ -1,0 +1,171 @@
+//
+// Graph
+//
+
+.graph-block {
+	background-color: $graph-bg;
+	color: $graph-txt;
+	font-size: 16px;
+
+	.header {
+		padding: 12px 15px 10px;
+		border-bottom: 1px solid $graph-border;
+
+		select {
+			background-color: transparent;
+			border:none;
+			padding-right: 8px;
+		}
+	}
+	.graph-area {
+		.circle-chart {
+			padding-right: 0;
+
+			@media (max-width: $screen-xs-max) {
+		        padding-right: 15px;
+		    }
+		}
+		h3 {
+			font-size: 16px;
+			padding: 18px 0 15px 0;
+
+			@media (max-width: $screen-xs-max) {
+		        padding-left: 15px;
+		        padding-right: 15px;
+		    }
+		}
+		.txt-big {
+			color: $blue;
+			font-size: 46px;
+			display: block;
+			font-weight: 300;
+		}
+		small {
+			font-size: 12px;
+			color: $white;
+		}
+		.border-bottom {
+			border-bottom: 1px solid $graph-border;
+		}
+		.border-right {
+			border-right: 1px solid $graph-border;
+
+			@media (max-width: $screen-xs-max) {
+		        border:none;
+		    }
+		}
+		.last-week {
+			padding: 25px 15px 20px 60px;
+			margin-bottom: 12px;
+			margin-right: 15px;
+
+			@media (max-width: $screen-xs-max) {
+		        margin-left: 15px;
+		    }
+
+			.count {
+				font-size: 20px;
+				margin-bottom: 5px;
+				display: block;
+			}
+			.txt {
+				font-size: 12px;
+				color: $lastweek;
+			}
+			&.sale {				
+            	@include background-image(icon-dollar, png, $graph-border, no-repeat, 7px, center);
+				.count {
+					color: $blue
+				}
+			}
+			&.order {
+            	@include background-image(icon-cart, png, $graph-border, no-repeat, 7px, center);
+				.count {
+					color: $lamon
+				}
+			}
+		}
+	}
+
+	&.white-graph {
+		background-color: $white;
+		color: $graph-txt;
+	}
+}
+
+//JS grapth
+.activity-grapth {
+	> div {
+		height: 100px;
+		margin:5px;
+	}
+}
+#circle {
+	position: relative;
+	padding: 5px 0 20px 0;
+
+	strong {
+		position: absolute;
+	    left: 50%;
+	    top: 50%;
+	    transform: translate(-50%, -50%);
+	    font-size: 20px;
+	    color: $white;
+
+	    small {
+	    	font-size: 12px;
+	    	display: block;
+	    }
+	}
+	canvas{
+		width: 130px;
+		height: 130px;
+		border-radius: 50%;
+		background-color: $graph-border;
+	}
+}
+
+//Steps
+ol {
+  &.progress-track {
+    display: table;
+    list-style-type: none;
+    margin: 0;
+    padding: 10px 15px 30px 0;
+    table-layout: fixed;
+    width: 100%;
+
+    @media (max-width: $screen-xs-max) {
+		padding-left: 15px;
+	} 
+    
+    li {
+      display: table-cell;
+      line-height: 35px;
+      position: relative;
+      text-align: center;
+      
+      .icon-wrap {
+        border-radius: 50%;
+        bottom: -2px;        
+        color: #fff;
+        display: block;
+        height: 12px;
+        margin: 0 auto -5px;
+        left: 0;
+        right: 0;        
+        position: absolute;
+        width: 12px;
+      background-color: $graph-border;
+      border: 5px solid $graph-border; 
+      }
+      
+      &.progress-done {
+        border-bottom: 2px solid $graph-border;
+        transition: border-color 1s ease-in-out;
+        -webkit-transition: border-color 1s ease-in-out;
+        -moz-transition: border-color 1s ease-in-out;
+      }           
+    }    
+  }
+}

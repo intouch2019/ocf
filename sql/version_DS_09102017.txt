@@ -1,0 +1,3 @@
+create table it_location_products(id bigint(20) not null auto_increment,location_id bigint(20) not null, product_id bigint(20) not null, is_mapped tinyint(1) not null default 0,createtime datetime not null, createdby bigint(20),createdat_location_id bigint(20),updatetime timestamp not null default current_timestamp on update current_timestamp,  updatedby bigint(20), updatedat_location_id bigint(20), primary key(id));
+
+insert into it_functionality_pages set pagecode = 'location_product_mapping',pagename='Location Products Mapping',pageuri='location/product/mapping',menuhead='Transactions',sequence = 2,submenu_seq = 10 , createtime = now();

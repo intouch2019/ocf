@@ -1,0 +1,121 @@
+//
+// Left side bar navigation
+//
+
+#sidebar-wrapper {
+    position: fixed;
+    left: 0px;
+    top: 60px;
+    width: 68px;
+    height: 100%;
+    overflow-y: hidden;
+    background: $sidebar-bg;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    z-index: 1;
+
+    @media (max-width: $screen-xs-max) {
+        width: 0px;
+        top: 30px;
+        background: rgba($sidebar-bg, 0.9);
+    }
+
+    .sidebar-nav {
+	    position: absolute;
+	    top: 0;
+	    width: 250px;
+	    margin: 0;
+	    padding: 0;
+	    list-style: none;
+        li {
+            border-bottom: solid 1px $sidebar-devider;
+            float: left;
+            width: 100%;
+
+            a {
+                display: table;
+                width: 100%;
+                padding: 30px 17px 25px 17px;
+                color: $nav-text-color;
+
+                @media (max-width: $screen-xs-max) {
+                    padding: 15px;
+                }
+
+                i {
+                    float: left;
+                }
+
+                span {
+                    float: left;
+                    margin: 0px 0px 0px 15px;
+                    padding-top: 5px;
+
+                    @media (min-width: $screen-xs-max) {
+                        display: none;
+                    }
+                }
+
+                .tooltip {
+                    @media (max-width: $screen-xs-max) {
+                        display: none !important;
+                    }
+                }
+            }
+
+            &.nav-dashboard {
+                &.active, &:hover {
+                    .nav-icon-dashboard {
+                        @include stitches-side-navbar (-217px, -5px, 30px, 30px);
+                    }
+                }
+            }
+
+            &.nav-messages {
+                &.active, &:hover {
+                    .nav-icon-chat {
+                        @include stitches-side-navbar (-135px, -5px, 32px, 29px);
+                    }
+                }
+            }
+
+            &.nav-settings {
+                &.active, &:hover {
+                    .nav-icon-setting {
+                        @include stitches-side-navbar (-381px, -5px, 32px, 32px);
+                    }
+                }
+            }
+
+            &.nav-notepad {
+                a {
+                    span {
+                        padding-top: 10px;
+                    }
+                }
+
+                &.active, &:hover {
+                    .nav-icon-notepad {
+                        @include stitches-side-navbar (-298px, -5px, 31px, 35px);
+                    }
+                }
+            }
+
+            &.nav-calendar {
+                a {
+                    span {
+                        padding-top: 8px;
+                    }
+                }
+
+                &.active, &:hover {
+                    .nav-icon-calendar {
+                        @include stitches-side-navbar (-49px, -5px, 34px, 34px);
+                    }
+                }
+            }
+        }
+	}
+}

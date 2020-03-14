@@ -1,0 +1,37 @@
+alter table it_locations add location_code varchar(100) after name;
+alter table it_locations add is_dependant tinyint(1) not null default 0 after pincode;
+create unique index unique_code on it_locations(location_code);
+alter table it_location_dependancy add is_active tinyint(1) not null default 1 after child_location_id;
+
+CREATE TABLE it_events_info (
+  id bigint(20) NOT NULL AUTO_INCREMENT,
+  location_id bigint(20) NOT NULL,
+  day_of_week int(11) NOT NULL,
+  is_active tinyint(1) NOT NULL DEFAULT '1',
+  createtime datetime NOT NULL,
+  createdby bigint(20) DEFAULT NULL,
+  createdat_location_id bigint(20) DEFAULT NULL,
+  updatetime timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  updatedby bigint(20) DEFAULT NULL,
+  updatedat_location_id bigint(20) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+);
+alter table it_events_info add event_time varchar(100) after day_of_week;
+
+
+
+CREATE TABLE it_location_dependancy (
+  id bigint(20) NOT NULL AUTO_INCREMENT,
+  parent_location_id bigint(20) NOT NULL,
+  child_location_id bigint(20) NOT NULL,  
+  createtime datetime NOT NULL,
+  createdby bigint(20) DEFAULT NULL,
+  createdat_location_id bigint(20) DEFAULT NULL,
+  updatetime timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  updatedby bigint(20) DEFAULT NULL,
+  updatedat_location_id bigint(20) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+);
+
+update it_location_types set name = "Hub"  where id = 2;
+

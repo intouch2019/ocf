@@ -1,0 +1,13 @@
+update it_functionality_pages set pagename = "Products Master" , submenu_seq = 1  where id = 1;
+update it_functionality_pages set pagename = "Locations Master" , submenu_seq = 2  where id = 3;
+update it_functionality_pages set pagename = "Users Master" , submenu_seq = 3  where id = 4;
+update it_functionality_pages set pagename = "Bins Master" , submenu_seq = 4  where id = 14;
+update it_functionality_pages set pagename = "Suppliers Master" , submenu_seq = 5  where id = 19;
+
+update it_functionality_pages set  menuhead="Transactions",sequence=2, submenu_seq = 1 where id = 5;
+update it_functionality_pages set  menuhead="Transactions",sequence=2, submenu_seq = 2 where id = 6;
+update it_functionality_pages set  menuhead="Transactions",sequence=2, submenu_seq = 3 where id =22;
+update it_functionality_pages set  menuhead="Transactions",sequence=2, submenu_seq = 4 where id =24;
+update it_functionality_pages set  menuhead="Transactions",sequence=2,submenu_seq = 5 where id =26;
+update it_functionality_pages set  menuhead="Transactions",sequence=2, submenu_seq = 6 where id =31;
+update it_functionality_pages set  menuhead="Transactions",sequence=2, submenu_seq = 7 where id =29;

@@ -1,0 +1,1 @@
+alter table it_products add column purchase_uom bigint(20) after product_handle;

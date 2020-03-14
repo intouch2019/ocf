@@ -1,0 +1,318 @@
+//
+// Services Block
+//
+
+
+.title-bar {
+	background-color: $title-bar-bg;
+	border-radius: 3px;
+	padding: 6px 10px 8px 10px;
+	font-size: 24px;
+	color: $white;
+
+	@media (min-width: $screen-custom-size) {
+		font-size: 40px;
+	}
+
+	@media (max-width: $screen-xs-max) {
+		font-size: 16px;
+	}
+}
+.title-bar-small {
+	@extend .title-bar;
+	font-size: 16px;
+	padding-top: 10px;
+}
+
+.services-block {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+
+	li {
+		float: left;
+		margin: 0px 25px 25px 0px;
+
+		@media (min-width: $screen-custom-size) {			
+			margin: 0px 50px 50px 0px;
+	    }
+
+	    @media (max-width: $screen-xs-min) {
+	    	margin: 0px 15px 15px 0px;
+	    }
+
+	    @media (max-width: 320px) {
+	    	margin: 0px 5px 5px 0px;
+	    }
+	}
+}
+
+.setup-listing {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	font-size: 40px;
+	counter-reset: section;
+
+	li {
+		float: left;
+		margin: 0px 150px 25px 0px;
+		font-size: 24px;
+		position: relative;
+		color: $black;
+		min-width: 163px;
+
+		@media (min-width: $screen-custom-size) {			
+			margin: 0px 50px 50px 0px;
+	    }
+
+	    @media (max-width: $screen-sm-max) {
+	    	margin: 0px 15px 15px 0px;
+	    	width: 45%;
+	    	font-size: 18px;
+	    }
+
+	    @media (max-width: $screen-xs-min) {
+	    	margin: 0px 15px 15px 0px;
+	    	width: 100%;
+	    }
+
+	    @media (max-width: 320px) {
+	    	&:nth-child(2n + 1) {
+	    		clear:left;
+	    	}
+	    }
+
+
+	    &:after {
+	    	counter-increment: section;
+  			content: counter(section) ".";
+  			position: absolute;
+  			left: -30px;
+  			bottom: -5px;
+  			font-size: 60px;
+  			color: $default-text-color;
+
+  			@media (max-width: $screen-sm-max) {
+  				font-size: 30px;
+  				left: -5px;
+    			bottom: 4px;
+  			}
+
+  			@media (max-width: $screen-xs-max) {
+		    	left: 0px;
+			    bottom: 5px;
+			    font-size: 24px;
+			}
+	    }
+
+	    &.add-qc {
+	    	.icon-qc {
+	    		@include background-image(icon-qc, png, transparent, no-repeat, left, top);
+	    		background-size: cover;
+	    		display: inline-block;
+	    		width: 125px;
+	    		height: 128px;
+	    	}
+	    }
+	    &.add-qa {
+	    	.icon-qa {
+	    		@include background-image(icon-qa, png, transparent, no-repeat, left, top);
+	    		background-size: cover;
+	    		display: inline-block;
+	    		width: 125px;
+	    		height: 128px;
+	    	}
+	    }
+	    &.create-po {
+	    	.icon-po {
+	    		@include background-image(icon-po, png, transparent, no-repeat, left, top);
+	    		background-size: cover;
+	    		display: inline-block;
+	    		width: 125px;
+	    		height: 128px;
+	    	}
+	    }
+	    &.form-set {
+	    	.icon-po {
+	    		@include background-image(icon-form-set, png, transparent, no-repeat, left, top);
+	    		background-size: cover;
+	    		display: inline-block;
+	    		width: 124px;
+	    		height: 128px;
+	    	}
+	    }
+	    &.create-activity {
+	    	.icon-po {
+	    		@include background-image(icon-create-activity, png, transparent, no-repeat, left, top);
+	    		background-size: cover;
+	    		display: inline-block;
+	    		width: 125px;
+	    		height: 128px;
+	    	}
+	    }
+	    &.upload-data {
+	    	.icon-po {
+	    		@include background-image(icon-upload-data, png, transparent, no-repeat, left, top);
+	    		background-size: cover;
+	    		display: inline-block;
+	    		width: 124px;
+	    		height: 128px;
+	    	}
+	    }
+	    &.assign-data {
+	    	.icon-po {
+	    		@include background-image(icon-assign-data, png, transparent, no-repeat, left, top);
+	    		background-size: cover;
+	    		display: inline-block;
+	    		width: 124px;
+	    		height: 128px;
+	    	}
+	    }
+
+	    @media (max-width: $screen-sm-max) {
+			span[class^="icon-"] {
+				height: 71px !important;
+    			width: 69px !important;
+			}
+		}
+
+	    @media (max-width: $screen-xs-max) {
+			span[class^="icon-"] {
+				height: 60px !important;
+    			width: 59px !important;
+			}
+		}
+
+	    p {
+	    	padding-left: 30px;
+	    	position: relative;
+
+		    @media (max-width: $screen-xs-max) {
+		    	font-size: 16px;
+				padding-left: 25px;
+			}
+
+	    	&:after {
+	    		content: '';
+	    		@include background-image(dashed-line, png, transparent, repeat-x, left, top);
+	    		position: absolute;
+	    		right: -50px;
+	    		top: 20px;
+	    		width: 94px;
+	    		height: 2px;
+
+	    		@media (max-width: $screen-sm-max) {
+			    	right: 70px;
+	    			top: 14px;
+				}
+
+				@media (max-width: 600px) {
+			    	right: 40px;
+	    			top: 14px;
+				}
+
+	    		@media (max-width: $screen-xs-min) {
+		    		display: none;
+			    }
+	    	}
+	    }
+	}	
+}
+
+
+.service-listing {
+	margin: 0px;
+	padding: 10px;
+	list-style: none;
+	counter-reset: section;
+
+	li {
+		float: left;
+		margin: 10px 50px 10px 10px;
+		font-size: 11px;
+		position: relative;
+		color: $black;
+
+	    &:after {
+	    	counter-increment: section;
+  			content: counter(section) ".";
+  			position: absolute;
+  			left: -10px;
+  			bottom: -5px;
+  			font-size: 20px;
+  			color: $default-text-color;
+	    }
+
+	    &.createactivity {
+	    	span {
+	    		@include background-image(icon-createactivity, png, transparent, no-repeat, left, top);
+	    		background-size: cover;
+	    		display: inline-block;
+	    		width: 47px;
+	    		height: 48px;
+	    	}
+	    }
+	    &.addentry {
+	    	span {
+	    		@include background-image(icon-addentry, png, transparent, no-repeat, left, top);
+	    		background-size: cover;
+	    		display: inline-block;
+	    		width: 47px;
+	    		height: 48px;
+	    	}
+	    }
+	    &.adduser {
+	    	span {
+	    		@include background-image(icon-adduser, png, transparent, no-repeat, left, top);
+	    		background-size: cover;
+	    		display: inline-block;
+	    		width: 47px;
+	    		height: 48px;
+	    	}
+	    }
+	   	&.createform {
+	    	span {
+	    		@include background-image(icon-createform, png, transparent, no-repeat, left, top);
+	    		background-size: cover;
+	    		display: inline-block;
+	    		width: 47px;
+	    		height: 48px;
+	    	}
+	    }
+	    &.addform {
+	    	span {
+	    		@include background-image(icon-addform, png, transparent, no-repeat, left, top);
+	    		background-size: cover;
+	    		display: inline-block;
+	    		width: 47px;
+	    		height: 48px;
+	    	}
+	    }
+	    &.track {
+	    	span {
+	    		@include background-image(icon-track, png, transparent, no-repeat, left, top);
+	    		background-size: cover;
+	    		display: inline-block;
+	    		width: 47px;
+	    		height: 48px;
+	    	}
+	    }
+
+	    p {
+	    	padding-left: 10px;
+	    	position: relative;
+	    	margin-bottom: 0;
+
+	    	&:after {
+	    		content: '';
+	    		@include background-image(dashed-line-small, png, transparent, repeat-x, left, top);
+	    		position: absolute;
+	    		right: -35px;
+	    		top: 5px;
+	    		width: 35px;
+	    		height: 2px;
+	    	}
+	    }
+	}	
+}

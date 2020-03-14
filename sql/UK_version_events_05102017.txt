@@ -1,0 +1,18 @@
+CREATE TABLE it_events (
+  id   bigint(20) NOT NULL AUTO_INCREMENT,
+  name  varchar(256) NOT NULL, 
+  day_of_week varchar(10),
+  is_active tinyint(1) NOT NULL DEFAULT '1',  
+  createtime datetime NOT NULL,
+  createdby bigint(20) NOT NULL,
+  updatetime timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  updatedby bigint(20) DEFAULT NULL,
+  createdat_location_id bigint(20) DEFAULT NULL,
+  updatedat_location_id bigint(20) DEFAULT NULL,
+  PRIMARY KEY (id),
+  UNIQUE KEY event_name (name)
+);
+
+insert into it_functionality_pages set pagecode="event",pagename="Events Master",pageuri="events",menuhead="Manage",sequence=1,submenu_seq=7,createtime=now();
+insert into it_functionality_pages set pagecode = "eventcreate",pagename="Event Create", pageuri="event/create",menuhead="Manage",sequence=0,submenu_seq=0,createtime=now();
+insert into it_functionality_pages set pagecode = "eventedit",pagename="Event Edit", pageuri="event/edit",menuhead="Manage",sequence=0,submenu_seq=0,createtime=now();

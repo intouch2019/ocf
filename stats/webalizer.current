@@ -1,0 +1,364 @@
+# Webalizer V2.23-08 Incremental Data - 03/14/2020 00:23:21
+2020 3 14 0 23 21
+2259 1067 15 75 18 5 36620673 817 30 0
+3 440 638 10 14
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+842 255 9805092 7 116 7
+219 111 3454520 2 61 5
+758 446 9620892 4 395 6
+0 0 0 0 0 0
+440 255 13740169 3 245 12
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+440 255 13740169 245
+0 0 0 0
+61 52 2337914 15
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+355 198 4368663 185
+341 195 2897900 194
+130 77 2534978 33
+46 32 899757 25
+1 1 16415 1
+0 0 0 0
+0 0 0 0
+681 176 6494181 92
+129 13 121608 14
+0 0 0 0
+0 0 0 0
+75 68 3209088 13
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0
+0
+0
+1067
+0
+0
+0
+0
+0
+4
+0
+0
+396
+0
+785
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+7
+0
+0
+0
+0
+0
+# -urls- 
+/products
+0 11 0 163574 1 0
+/challan/additem/transferid
+0 9 0 332406 0 0
+/bower_components/Ionicons/css/ionicons.min.css
+0 31 0 564124 0 0
+/js/common.js
+0 27 0 10610 0 0
+/ajax/tb_stocktransfer.php
+0 32 0 35735 0 0
+/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js
+0 28 0 201174 0 0
+/ajax/tb_stockreport.php
+0 5 0 2594 0 0
+/stock/report/dcid
+0 1 0 19606 0 0
+/images/bg-main.png
+1 29 0 2939456 0 0
+/bower_components/jquery-ui/jquery-ui.min.js
+0 29 0 2081935 0 0
+/bower_components/font-awesome/css/font-awesome.min.css
+0 30 0 279000 0 0
+/bower_components/bootstrap-daterangepicker/daterangepicker.js
+0 28 0 487116 0 0
+/stocktransfer/stockstatus
+0 28 0 467579 0 0
+/images/bg-logo.jpg
+1 28 0 153912 0 0
+/images/bg-header.jpg
+1 32 0 27552 0 0
+/css/style.css.map
+0 1 0 26313 0 0
+/bower_components/moment/min/moment.min.js
+0 29 145 360255 0 0
+/stocktransfer
+0 62 0 1030047 2 0
+/images/icon-suppy-tracking.png
+1 22 33082192 29484 0 0
+/bower_components/select2/dist/js/select2.full.min.js
+0 29 0 652058 0 0
+/images/profile-pic.jpg
+1 19 0 23112 0 0
+/bower_components/jvectormap/jquery-jvectormap.css
+0 30 0 66350 0 0
+/js/bootstrap.min.js
+0 27 0 185225 0 0
+/bower_components/select2/dist/css/select2.min.css
+0 29 0 121568 0 0
+/css/bootstrap.css.map
+0 1 0 84083 0 0
+/challans/in/challanstatus
+0 7 0 108625 0 0
+/stcfiles/2.pdf
+0 1 33104624 8999 0 0
+/ajax/tb_crstockreport.php
+0 5 0 19576 0 1
+/ajax/getStockItemValue.php
+0 5 0 283 0 0
+/timeout
+0 60 0 508620 0 1
+/stocktransfer/additem/transferid
+0 19 0 9588294 11 0
+/postLogin.php
+0 1 0 787 1 0
+/css/bigbox.css
+0 8 0 5286 0 0
+/jqueryui/js/jquery-ui-1.8.14.custom.min.js
+0 29 0 1892214 0 0
+/ajax/tb_products.php
+0 11 0 7689 0 0
+/images/logo.png
+1 30 0 18044 0 0
+/favicon.ico
+0 14 0 16100 0 0
+/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js
+0 29 0 233261 0 0
+/js/script.js
+0 30 0 3456 0 0
+/cr/stock/pull/po_alloc_id
+0 6 33104272 263872 0 0
+/dist/js/adminlte.min.js
+0 28 0 76914 0 0
+/stcfiles/9.pdf
+0 2 0 25006 0 0
+/ajax/tb_challans.php
+0 28 0 55747 0 0
+/images/icon-retail-mall-solution.png
+1 20 0 15948 0 0
+/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css
+0 29 0 17808 0 0
+/cr/stock/pull/transferid
+0 19 0 390081 0 0
+/css/style.css
+0 30 0 407556 0 0
+/bower_components/jquery/dist/jquery.min.js
+0 27 0 519954 0 0
+/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js
+0 28 0 1476524 0 0
+/bower_components/jquery-knob/dist/jquery.knob.min.js
+0 29 0 75628 0 0
+/ajax/getBatchcodeByProduct.php
+0 19 0 606 0 0
+/challans/in
+0 21 0 327254 0 0
+/jqueryui/js/jquery-1.5.1.min.js
+0 30 0 937860 0 0
+/ajax/deleteChallanitem.php
+0 1 0 29 0 0
+/dist/js/pages/dashboard.js
+0 28 0 23934 0 0
+/css/bootstrap.css
+0 30 0 1570220 0 0
+/dist/js/demo.js
+0 28 0 103788 0 0
+/ajax/createChallan.php
+0 3 0 133 0 0
+/stock/report
+0 4 0 74954 0 0
+/bower_components/fastclick/lib/fastclick.js
+0 28 0 155790 0 0
+/stcfiles/5.pdf
+0 1 33104400 9457 0 0
+/
+0 59 0 667827 12 0
+/cr/stock/report
+0 4 0 70681 0 0
+/bower_components/jquery-sparkline/dist/jquery.sparkline.min.js
+0 28 0 491876 0 0
+/bower_components/font-awesome/fonts/fontawesome-webfont.woff2
+0 7 0 385800 0 0
+/jqueryui/css/custom-theme/jquery-ui-1.8.14.custom.css
+0 33 3256718468312348205 368896 0 0
+/dist/css/AdminLTE.min.css
+0 31 0 1089672 0 0
+/plugins/jvectormap/jquery-jvectormap-world-mill-en.js
+0 29 0 1263489 0 0
+/nopage
+0 202 0 1874684 0 12
+/ajax/tb_stocktransfer_rfc.php
+0 57 0 12896 0 1
+/css/bi-style.css
+0 35 0 68744 0 0
+/images/icon-channel-data-management.png
+1 21 0 33715 0 0
+/bower_components/jquery-slimscroll/jquery.slimscroll.min.js
+0 28 0 28344 0 0
+/cr/challan/pull/challanid
+0 3 6802843165930815488 66981 0 0
+/dist/css/skins/_all-skins.min.css
+0 34 0 582176 0 0
+# End Of Table - urls
+# -sites- (monthly)
+59.91.75.15
+0 430 238 4745854 1 1584005274
+/ajax/tb_stocktransfer.php
+116.74.186.218
+0 129 76 2526501 3 1583941086
+/timeout
+google-proxy-64-233-173-181.google.com
+0 27 23 957005 1 1583868796
+/timeout
+157.37.47.247
+0 1 0 0 1 1583868784
+/postLogin.php
+cpe-24-27-10-63.austin.res.rr.com
+0 266 155 2520709 3 1584005261
+/ajax/tb_challans.php
+google-proxy-66-249-83-215.google.com
+0 1 1 11308 1 1583856676
+/
+google-proxy-64-233-173-179.google.com
+0 21 20 1061850 1 1583868790
+/nopage
+google-proxy-66-102-9-175.google.com
+0 1 1 11308 1 1584144385
+/
+103.129.113.251
+0 130 75 4038151 1 1584144648
+/timeout
+203.100.73.42
+0 91 36 944434 3 1584015780
+/stocktransfer
+12.161.82.66
+0 61 52 2337914 1 1583980623
+/ajax/tb_products.php
+157.37.119.203
+0 457 119 4009489 1 1583856661
+/ajax/tb_products.php
+157.37.63.15
+0 309 71 2575207 1 1583856506
+/stocktransfer
+google-proxy-64-233-173-177.google.com
+0 26 25 1190233 1 1583868795
+/
+43.243.173.40
+0 309 179 9690710 10 1584145401
+/nopage
+# End Of Table - sites (monthly)
+# -sites- (daily)
+google-proxy-66-102-9-175.google.com
+0 1 1 11308 1 1584144385
+/
+103.129.113.251
+0 130 75 4038151 1 1584144648
+/timeout
+43.243.173.40
+0 309 179 9690710 10 1584145401
+/nopage
+# End Of Table - sites (daily)
+# -referrers- 
+http://demo-ocf.onintouch.com/challans/in
+0 165
+http://demo-ocf.onintouch.com/timeout
+0 34
+http://demo-ocf.onintouch.com/challans/in/challanstatus
+0 37
+http://demo-ocf.onintouch.com/css/style.css
+0 152
+http://demo-ocf.onintouch.com/stocktransfer
+0 384
+http://demo-ocf.onintouch.com/challan/additem/transferid
+0 48
+- (Direct Request)
+0 37
+http://demo-ocf.onintouch.com/stock/report
+0 16
+http://demo-ocf.onintouch.com/stocktransfer/additem/transferid
+0 99
+http://demo-ocf.onintouch.com/stock/report/dcid
+0 5
+http://demo-ocf.onintouch.com/
+0 873
+http://demo-ocf.onintouch.com/cr/stock/pull/transferid
+0 51
+http://demo-ocf.onintouch.com/stocktransfer/stockstatus
+0 120
+http://demo-ocf.onintouch.com/cr/challan/pull/challanid
+0 12
+http://demo-ocf.onintouch.com/cr/stock/pull/po_alloc_id
+0 19
+http://demo-ocf.onintouch.com/products
+0 181
+http://demo-ocf.onintouch.com/cr/stock/report
+0 19
+http://demo-ocf.onintouch.com/bower_components/font-awesome/css/font-awesome.min.css
+0 7
+# End Of Table - referrers
+# -agents- 
+Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:73.0) Gecko/20100101 Firefox/73.0
+0 327
+Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0
+0 1417
+Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36
+0 438
+Mozilla/5.0 (Linux; Android 10; GM1911) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Mobile Safari/537.36
+0 75
+Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36 Google (+https://dev
+0 2
+# End Of Table - agents
+# -search strings- 
+# End Of Table - search strings
+# -usernames- 
+# End Of Table - usernames
